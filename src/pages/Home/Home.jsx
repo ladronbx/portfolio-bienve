@@ -2,8 +2,8 @@ import React from 'react';
 import { Education } from '../../common/Education/Education';
 import { Language } from '../../common/Language/Language';
 import { Contact } from '../../common/Contact/Contact';
-import name from '../../assets/name-cabecera.png';
-import imgCabecera from '../../assets/img/home-header-container-img.png';
+import name from '../../assets/build/name-cabecera.png';
+import imgCabecera from '../../assets/build/img/home-header-container-img.png';
 // import { GroupProjects } from '../GroupProjects/GroupProjects';
 
 export const Home = () => {
