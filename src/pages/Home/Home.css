@@ -1,0 +1,40 @@
+.tecnologias {
+    margin: 2rem auto 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(38, 26, 25, 0.04) 0px 1.51px 5.3px, rgba(38, 26, 25, 0.05) 0px 3.03px 4.54px;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.tecnologias-title {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    color: rgb(131, 126, 147);
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgb(192, 190, 201);
+}
+
+li img {
+    width: 4rem;
+    height: 4rem;
+    filter: grayscale(100%);
+}
+
+li img:hover {
+    width: 4rem;
+    height: 4rem;
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+li {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 900;
+}
