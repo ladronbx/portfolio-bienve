@@ -51,30 +51,33 @@ export const Home = () => {
       </div>
 
 
-
-
       <div className='tecnologias'>
         <h4 className='tecnologias-title'>Tecnologías</h4>
-        <ul className="sc-1c5ffc37-10 crwaTb">
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/22/05/10/0ac6686e-6f1b-404e-bea9-f48caf630357_git-icon.svg" alt="Git_icon" aria-hidden="true" /><span>Git</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/9e203859-fbb2-4cec-afda-76ac67d7326f_html5-original.svg" alt="HTML_Icon" aria-hidden="true" /><span>HTML</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/74b1de9e-4322-4696-b5d3-3e0afbdb1d69_css3-original.svg" alt="CSS_Icon" aria-hidden="true" /><span>CSS</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/ee029a19-3caf-41fd-a518-f3bba89b189a_expressjs.svg" alt="Express" aria-hidden="true" /><span>Express</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/30998747-6db9-4b10-bdd2-a1648a183cf5_redux.svg" alt="Redux_Icon" aria-hidden="true" /><span>Redux</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/7681aee4-3c67-4400-bdba-9162e4e40002_typescript_Icon.png" alt="Typescript_Icon" aria-hidden="true" /><span>TypeScript</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/6f9516ed-93b4-4c0c-8437-e07d208087a8_nodejs-original.svg" alt="Node_Icon" aria-hidden="true" /><span>NodeJS</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/cefadbb0-1e21-4b06-afab-87122abb590f_GitHub_Icon.png" alt="GitHub_Icon" aria-hidden="true" /><span>Github</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/22/07/27/de7063e0-b07c-4882-ba02-15ad6dc720bd_tailwindcss-icon.svg" alt="tailwind_avatar" aria-hidden="true" /><span>Tailwind</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/5230823c-de8c-4996-9b46-4a9029c41322_react-original.svg" alt="React_Icon" aria-hidden="true" /><span>React</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/22/05/10/7f4427d3-5f82-4ea8-a78a-5b9e0b4a1cac_excel_icon.png" alt="Excel_icon" aria-hidden="true" /><span>Microsoft Excel</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/01e3f3ea-9e28-4bdf-847c-e7eaad85fa11_php-original.svg" alt="PHP_Icon" aria-hidden="true" /><span>PHP</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/bd0b2bd8-c6cf-49c9-9438-5cf99e6286ba_laravel-plain.svg" alt="Laravel_Icon" aria-hidden="true" /><span>Laravel</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/b6433b93-4491-4d88-b692-a24f1e108bc7_javascript-original.svg" alt="JavaScript_Icon" aria-hidden="true" /><span>JavaScript</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/8b444286-1ea9-41c7-972e-c233aca157ad_mysql-original.svg" alt="MySQL_Icon" aria-hidden="true" /><span>MySQL</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/895264cc-77c6-4ec7-82e1-089fb2b0de50_SQL_Icon.png" alt="SQL_Icon" aria-hidden="true" /><span>SQL</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/5e40f5a3-9a3e-4e23-a48d-112bd1f8de32_bootstrap-plain.svg" alt="Bootstrap logo" aria-hidden="true" /><span>Bootstrap</span></li>
-          <li><img src="../../assets/build/icons/icon_default_tech.svg" alt="" aria-hidden="true" /><span>FlexBox</span></li>
-          <li><img src="https://media-asgard.s3.eu-west-1.amazonaws.com/22/07/27/2401a4f4-8203-45b9-b66e-a35d47172b6a_typeorm.svg" alt="avatar" aria-hidden="true" /><span>TypeORM</span></li></ul>
+        <ul className="tecnologias-grupo">
+          <li><img src="../../src/assets/build/img/icons/html5.svg" alt="HTML_Icon" aria-hidden="true" /><span>HTML</span></li>
+          <li><img src="../../src/assets/build/img/icons/css.svg" alt="CSS_Icon" aria-hidden="true" /><span>CSS</span></li>
+          <li><img src="../../src/assets/build/img/icons/icon_default_tech.svg" alt="" aria-hidden="true" /><span>FlexBox</span></li>
+          <li><img src="../../src/assets/build/img/icons/bootstrap.svg" alt="Bootstrap logo" aria-hidden="true" /><span>Bootstrap</span></li>
+          <li><img src="../../src/assets/build/img/icons/tailwind.svg" alt="tailwind_avatar" aria-hidden="true" /><span>Tailwind</span></li>
+          <li><img src="../../src/assets/build/img/icons/react.svg" alt="React_Icon" aria-hidden="true" /><span>React</span></li>
+          <li><img src="../../src/assets/build/img/icons/redux.svg" alt="Redux_Icon" aria-hidden="true" /><span>Redux</span></li>
+          <li><img src="../../src/assets/build/img/icons/figma.svg" alt="Figma" aria-hidden="true" /><span>Figma</span></li>
+          <li><img src="../../src/assets/build/img/icons/js.svg" alt="JavaScript_Icon" aria-hidden="true" /><span>JavaScript</span></li>
+          <li><img src="../../src/assets/build/img/icons/typescript.png" alt="Typescript_Icon" aria-hidden="true" /><span>TypeScript</span></li>
+          <li><img src="../../src/assets/build/img/icons/node.svg" alt="Node_Icon" aria-hidden="true" /><span>NodeJS</span></li>
+          <li><img src="../../src/assets/build/img/icons/express.svg" alt="Express" aria-hidden="true" /><span>Express</span></li>
+          <li><img src="../../src/assets/build/img/icons/typeorm.svg" alt="avatar" aria-hidden="true" /><span>TypeORM</span></li>
+          <li><img src="../../src/assets/build/img/icons/sql.png" alt="SQL_Icon" aria-hidden="true" /><span>SQL</span></li>
+          <li><img src="../../src/assets/build/img/icons/mysql.svg" alt="MySQL_Icon" aria-hidden="true" /><span>MySQL</span></li>
+          <li><img src="../../src/assets/build/img/icons/mongo.svg" alt="MongoDB_Icon" aria-hidden="true" /><span>MongoDB</span></li>
+          <li><img src="../../src/assets/build/img/icons/php.svg" alt="PHP_Icon" aria-hidden="true" /><span>PHP</span></li>
+          <li><img src="../../src/assets/build/img/icons/laravel.svg" alt="Laravel_Icon" aria-hidden="true" /><span>Laravel</span></li>
+          <li><img src="../../src/assets/build/img/icons/aws.png" alt="Deploy_AWS" aria-hidden="true" /><span>Deploy AWS</span></li>
+          <li><img src="../../src/assets/build/img/icons/postman.webp" alt="Postman" aria-hidden="true" /><span>Postman</span></li>
+          <li><img src="../../src/assets/build/img/icons/docker.svg" alt="Docker" aria-hidden="true" /><span>Docker</span></li>
+          <li><img src="../../src/assets/build/img/icons/git-icon.svg" alt="Git_icon" aria-hidden="true" /><span>Git</span></li>
+          <li><img src="../../src/assets/build/img/icons/GitHub_Icon.png" alt="GitHub_Icon" aria-hidden="true" /><span>Github</span></li>
+        </ul>
       </div>
     </div>
   );
