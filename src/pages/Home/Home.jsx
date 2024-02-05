@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <div className='container-body relative'>
 
-      <div className='img-texto-name absolute z-[4] w-30 2xl:30 xl:30 lg:40 md:50 sm:100 xs:100'>
+      <div className='img-texto-name absolute z-[4] w-30 2xl:30 xl:50 lg:70 md:70 sm:100 xs:100'>
         <div className='2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'><img className="w-100" src={name} alt="name" draggable="false" /></div>
         <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
           <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[16px] xs:text-[10px]'>Web developer</h2>
