@@ -21,8 +21,7 @@
 }
 
 li img {
-    height: 4rem;
-    width: 5rem;
+    width: 4rem;
     filter: grayscale(100%);
 }
 
