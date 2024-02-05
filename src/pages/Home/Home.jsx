@@ -5,6 +5,7 @@ import { Contact } from '../../common/Contact/Contact';
 import name from '../../assets/build/name-cabecera.png';
 import imgCabecera from '../../assets/build/img/home-header-container-img.png';
 import './Home.css';
+import { Intro } from '../../common/Intro/Intro';
 // import { GroupProjects } from '../GroupProjects/GroupProjects';
 
 export const Home = () => {
@@ -19,12 +20,14 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center z-[-4]">
-        <img className="mx-auto" src={imgCabecera} alt="name" draggable="false" />
+      <div className="z-[-4]">
+        <img className="img-cabecera-style h-screen object-cover object-center w-full" src={imgCabecera} alt="name" draggable="false" />
       </div>
 
 
       <div className='home-style flex flex-col items-center flex-wrap'>
+
+      <Intro />
 
         {/* <GroupProjects /> */}
 

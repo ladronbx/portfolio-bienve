@@ -643,6 +643,9 @@ video {
 .w-30 {
   width: 30%;
 }
+.w-auto {
+  width: auto;
+}
 .w-full {
   width: 100%;
 }
@@ -720,6 +723,14 @@ video {
 }
 .bg-cover {
   background-size: cover;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 .pt-2 {
   padding-top: 0.5rem;
