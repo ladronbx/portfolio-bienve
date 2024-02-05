@@ -1,8 +1,8 @@
 
 
-export const Project = ({ title, description, longDescription, technologies, link, code}) => {
+export const Project = ({ title, description, longDescription, technologies, link, code }) => {
     return (
-        <div className="project">
+        <div className="project-style">
             <h3>{title}</h3>
             <p>{description}</p>
             <p>{longDescription}</p>

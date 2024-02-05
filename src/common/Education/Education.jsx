@@ -2,7 +2,7 @@ import React from "react";
 
 export const Education = ({ title , academy, year, location}) => {
     return (
-        <div className="project">
+        <div className="education-style">
             <h3>{title}</h3>
             <h4>{academy}</h4>
             <p>{year}</p>

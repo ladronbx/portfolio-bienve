@@ -9,25 +9,28 @@ import './Home.css';
 
 export const Home = () => {
   return (
-    <div className='home-style flex relative flex-wrap flex-col w-screen '>
-      <div className="w-screen h-screen absolute z-[-1] flex flex-col items-center">
-        <img className="mx-auto" src={imgCabecera} alt="name" draggable="false" />
-      </div>
+    <div className='container-body relative'>
 
-
-
-      <div className='h-screen relative w-30 2xl:30 xl:30 lg:30 md:30 sm:100 xs:100'>
+      <div className='img-texto-name absolute z-[4] w-30 2xl:30 xl:30 lg:40 md:50 sm:100 xs:100'>
         <div className='2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'><img className="w-100" src={name} alt="name" draggable="false" /></div>
         <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
           <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[16px] xs:text-[10px]'>Web developer</h2>
           <Contact />
         </div>
-
       </div>
-      {/* <GroupProjects /> */}
 
-      <div className='flex flex-col'>
-        <div className='row'>
+      <div className="flex flex-col items-center z-[-4]">
+        <img className="mx-auto" src={imgCabecera} alt="name" draggable="false" />
+      </div>
+
+
+      <div className='home-style flex flex-col items-center flex-wrap'>
+
+        {/* <GroupProjects /> */}
+
+
+        <div className='2xl:mt-[36px] xl:mt-[30px] lg:mt-[20px] md:mt-[20px] sm:mt-[16px] xs:mt-[30px]'>
+          <h3>Formación académica</h3>
           <Education
             title='Bootcamp Full Stack Web Developer'
             academy='GeeksHubs Academy'
@@ -42,14 +45,18 @@ export const Home = () => {
             location='Valencia, Spain'
           />
         </div>
-      </div>
 
-      <div className='row'>
-        <Language language='Spanish' level='Native' />
-        <Language language='English' level='Certificado A2' />
-        <Language language='Valenciano' level='Alto' />
-      </div>
+        <div className='2xl:mt-[36px] xl:mt-[30px] lg:mt-[20px] md:mt-[20px] sm:mt-[16px] xs:mt-[30px]'>
+          <Language language='Spanish' level='Native' />
+          <Language language='English' level='Certificado A2' />
+          <Language language='Valenciano' level='Alto' />
+        </div>
+        <div className='2xl:mt-[36px] xl:mt-[30px] lg:mt-[20px] md:mt-[20px] sm:mt-[16px] xs:mt-[30px]'>
+          ldfjhvodfuhvpdifj
+          vpdifjv pñdijvf
 
+        </div>
+      </div>
 
       <div className='tecnologias'>
         <h4 className='tecnologias-title'>Tecnologías</h4>
@@ -73,12 +80,13 @@ export const Home = () => {
           <li><img src="../../src/assets/build/img/icons/php.svg" alt="PHP_Icon" aria-hidden="true" /><span>PHP</span></li>
           <li><img src="../../src/assets/build/img/icons/laravel.svg" alt="Laravel_Icon" aria-hidden="true" /><span>Laravel</span></li>
           <li><img src="../../src/assets/build/img/icons/aws.png" alt="Deploy_AWS" aria-hidden="true" /><span>Deploy AWS</span></li>
-          <li><img src="../../src/assets/build/img/icons/postman.webp" alt="Postman" aria-hidden="true" /><span>Postman</span></li>
+          <li><img src="../../src/assets/build/img/icons/postman.svg" alt="Postman" aria-hidden="true" /><span>Postman</span></li>
           <li><img src="../../src/assets/build/img/icons/docker.svg" alt="Docker" aria-hidden="true" /><span>Docker</span></li>
           <li><img src="../../src/assets/build/img/icons/git-icon.svg" alt="Git_icon" aria-hidden="true" /><span>Git</span></li>
-          <li><img src="../../src/assets/build/img/icons/GitHub_Icon.png" alt="GitHub_Icon" aria-hidden="true" /><span>Github</span></li>
+          <li><img src="../../src/assets/build/img/icons/GitHub_Icon.svg" alt="GitHub_Icon" aria-hidden="true" /><span>Github</span></li>
         </ul>
       </div>
+
     </div>
   );
 };

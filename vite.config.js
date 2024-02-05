@@ -8,3 +8,4 @@ export default defineConfig({
     exclude: ["swiper", "swiper/vue", "swiper/types"],
   },
 })
+
