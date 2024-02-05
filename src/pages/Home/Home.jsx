@@ -63,8 +63,8 @@ export const Home = () => {
             <Language language='Valenciano' level='Alto' />
           </div>
         </Link>
-
       </div>
+      
       <Link to="section6" smooth={true} duration={500} offset={-50}>
         <div className='tecnologias h-screen' id="section5" style={{ scrollSnapAlign: 'start' }}>
           <h4 className='tecnologias-title'>Tecnologías</h4>
