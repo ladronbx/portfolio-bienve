@@ -62,11 +62,13 @@ export const Home = () => {
       </div>
 
       <div id="section2" className='flex justify-center items-center flex-wrap h-screen' style={{ scrollSnapAlign: 'start' }}>
-        <div className='row flex items-center flex-wrap'>
+        <div className='row flex items-center flex-wrap h-screen'>
           <div className='col'>
             <div className='p-30 m-30 '>
               <Intro />
-              <ScrollLink to={"section3"} text={'Ver formación académica'} />
+              <div className='flex justify-end items-end'>
+                <ScrollLink to={"section3"} text={'>>'} />
+              </div>
             </div>
           </div>
           <div className='col'>
@@ -78,13 +80,12 @@ export const Home = () => {
       </div>
 
       <div id="section3" className='flex justify-center items-start flex-wrap h-screen' style={{ scrollSnapAlign: 'start' }}>
-        <div className='row flex items-start flex-wrap'>
-          <div className='col'>
+        <div className='row flex items-start flex-wrap h-screen'>
+          <div className='col flex items-middle '>
             <div className='m-30'><img src={gifCode} alt="GIF" />
             </div>
-            <ScrollLink to={"section4"} text={'¿Qué lenguajes de programación conozco?'} />
           </div>
-          <div className='col'>
+          <div className='col flex items-start h-screen'>
             <div className='m-30 '>
               <h2 className='text-cyan-700'>Formación académica</h2>
               <Education
@@ -101,17 +102,23 @@ export const Home = () => {
               />
             </div>
           </div>
-          <div className='col'>
+
+          <div className='col flex items-start h-screen'>
             <div className='m-30'>
+
               <h2 className='text-cyan-700'>Idiomas</h2>
               <Language language='Spanish' level='Native' />
               <Language language='English' level='Certificado A2' />
               <Language language='Valenciano' level='Alto' />
+
+              <div className='flex justify-end items-end mt-[70px]'>
+                <ScrollLink to={"section4"} text={'>>'} />
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-
 
       <div className='tecnologias h-screen' id="section4" style={{ scrollSnapAlign: 'start' }}>
         <img src={gifCode2} alt="GIF" />
