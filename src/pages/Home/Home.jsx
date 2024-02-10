@@ -50,15 +50,19 @@ export const Home = () => {
         <div className='2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
           <img className="w-100" src={name} alt="name" draggable="false" />
         </div>
+
         <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
           <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[20px]'>Web developer</h2>
           <Contact />
-          < ScrollLink to={"section2"} text={'¿Quién soy?'} />
         </div>
       </div>
 
       <div className="z-[-4]" style={{ scrollSnapAlign: 'start' }}>
         <img className="img-cabecera-style h-screen object-cover object-center w-full" src={imgCabecera} alt="name" draggable="false" />
+      </div>
+
+      <div className="boton-intro absolute top-[500px] left-0 z-10 p-4">
+        <ScrollLink to={"section2"} text={'¿Quién soy?'} />
       </div>
 
       <div id="section2" className='flex justify-center items-center flex-wrap relative' style={{ scrollSnapAlign: 'start' }}>
@@ -80,7 +84,7 @@ export const Home = () => {
       </div>
 
       <div className='tecnologias relative' id="section3" style={{ scrollSnapAlign: 'start' }}>
-        <div className='row p-30 flex items-center flex-wrap'>
+        <div className='row pt-[40px] flex items-center flex-wrap'>
 
           <h2 className='tecnologias-title text-cyan-700'>Tecnologías</h2>
           <ul className="tecnologias-grupo">

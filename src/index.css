@@ -504,8 +504,17 @@ video {
 .relative {
   position: relative;
 }
+.bottom-0 {
+  bottom: 0px;
+}
+.left-0 {
+  left: 0px;
+}
 .right-0 {
   right: 0px;
+}
+.top-\[500px\] {
+  top: 500px;
 }
 .z-0 {
   z-index: 0;
@@ -533,9 +542,6 @@ video {
 }
 .m-30 {
   margin: 30px;
-}
-.m-\[50px\] {
-  margin: 50px;
 }
 .m-auto {
   margin: auto;
@@ -838,6 +844,9 @@ video {
 .p-30 {
   padding: 30px;
 }
+.p-4 {
+  padding: 1rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -852,6 +861,12 @@ video {
 }
 .pt-2 {
   padding-top: 0.5rem;
+}
+.pt-4 {
+  padding-top: 1rem;
+}
+.pt-\[40px\] {
+  padding-top: 40px;
 }
 .text-left {
   text-align: left;
