@@ -48,3 +48,9 @@ li {
     gap: 1rem 2rem;
     margin-bottom: 3rem;
 }
+
+@media (max-width: 700px) {
+    #section2 .row {
+        flex-direction: column;
+    }
+}

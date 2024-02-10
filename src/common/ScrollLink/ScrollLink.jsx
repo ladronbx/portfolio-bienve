@@ -9,7 +9,7 @@ export const ScrollLink = ({ to, text }) => {
             smooth={true}
             duration={200}
             offset={-50}
-            className={"inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"}
+            className={"mt-30 inline-block bg-cyan-700 hover:bg-cyan-500 hover:cursor-pointer text-white font-bold py-2 px-4 rounded no-underline"}
         >{text}</Link>
     );
 }

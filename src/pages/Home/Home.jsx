@@ -44,8 +44,7 @@ import { ScrollLink } from '../../common/ScrollLink/ScrollLink';
 
 export const Home = () => {
   return (
-    <div className='container-body relative'>
-
+    <div className='container-body relative bg-black w-full overflow-x-hidden'>
 
       <div className='container-img-contact-cabecera absolute z-[4] right-0 2xl:w-40 xl:w-40 lg:w-50 md:w-60 sm:w-70 xs:w-100'>
         <div className='2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
@@ -54,7 +53,7 @@ export const Home = () => {
         <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
           <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[20px]'>Web developer</h2>
           <Contact />
-          < ScrollLink to={"section2"} text={'Ver más'}/>
+          < ScrollLink to={"section2"} text={'¿Quién soy?'} />
         </div>
       </div>
 
@@ -62,50 +61,59 @@ export const Home = () => {
         <img className="img-cabecera-style h-screen object-cover object-center w-full" src={imgCabecera} alt="name" draggable="false" />
       </div>
 
-
-
-      <div className='home-style flex flex-col items-center flex-wrap'>
-
-        <div id="section2" style={{ scrollSnapAlign: 'start' }}>
-          <div className='h-screen'>
-            <Intro />
-            <img src={gifIntro} alt="GIF" />
+      <div id="section2" className='flex justify-center items-center flex-wrap h-screen' style={{ scrollSnapAlign: 'start' }}>
+        <div className='row flex items-center flex-wrap'>
+          <div className='col'>
+            <div className='p-30 m-30 '>
+              <Intro />
+              <ScrollLink to={"section3"} text={'Ver formación académica'} />
+            </div>
+          </div>
+          <div className='col'>
+            <div className='p-30 m-30'>
+              <img src={gifIntro} alt="GIF" />
+            </div>
           </div>
         </div>
-        <Link to="section3" smooth={true} duration={500} offset={-50}> Ver más</Link>
+      </div>
 
-
-        <div className='2xl:mt-[36px] xl:mt-[30px] lg:mt-[20px] md:mt-[20px] sm:mt-[16px] xs:mt-[30px] h-screen' id="section3" style={{ scrollSnapAlign: 'start' }}>
-          <h3>Formación académica</h3>
-          <Education
-            title='Bootcamp Full Stack Web Developer'
-            academy='GeeksHubs Academy'
-            year='2024'
-            location='Valencia, Spain'
-          />
-          <Education
-            title='GM Gestión administrativa'
-            academy='CIPFP Mislata'
-            year='2015'
-            location='Valencia, Spain'
-          />
-          <img src={gifCode} alt="GIF" />
+      <div id="section3" className='flex justify-center items-start flex-wrap h-screen' style={{ scrollSnapAlign: 'start' }}>
+        <div className='row flex items-start flex-wrap'>
+          <div className='col'>
+            <div className='m-30'><img src={gifCode} alt="GIF" />
+            </div>
+            <ScrollLink to={"section4"} text={'¿Qué lenguajes de programación conozco?'} />
+          </div>
+          <div className='col'>
+            <div className='m-30 '>
+              <h2 className='text-cyan-700'>Formación académica</h2>
+              <Education
+                title='Bootcamp Full Stack Web Developer'
+                academy='GeeksHubs Academy'
+                year='2024'
+                location='Valencia, Spain'
+              />
+              <Education
+                title='GM Gestión administrativa'
+                academy='CIPFP Mislata'
+                year='2015'
+                location='Valencia, Spain'
+              />
+            </div>
+          </div>
+          <div className='col'>
+            <div className='m-30'>
+              <h2 className='text-cyan-700'>Idiomas</h2>
+              <Language language='Spanish' level='Native' />
+              <Language language='English' level='Certificado A2' />
+              <Language language='Valenciano' level='Alto' />
+            </div>
+          </div>
         </div>
-
-        <Link to="section4" smooth={true} duration={500} offset={-50}>Ver más</Link>
-
-        <div className='2xl:mt-[36px] xl:mt-[30px] lg:mt-[20px] md:mt-[20px] sm:mt-[16px] xs:mt-[30px] h-screen' id="section4" style={{ scrollSnapAlign: 'start' }}>
-          <Language language='Spanish' level='Native' />
-          <Language language='English' level='Certificado A2' />
-          <Language language='Valenciano' level='Alto' />
-        </div>
-        <Link to="section5" smooth={true} duration={500} offset={-50}>
-          Ver más
-        </Link>
       </div>
 
 
-      <div className='tecnologias h-screen' id="section5" style={{ scrollSnapAlign: 'start' }}>
+      <div className='tecnologias h-screen' id="section4" style={{ scrollSnapAlign: 'start' }}>
         <img src={gifCode2} alt="GIF" />
         <h4 className='tecnologias-title'>Tecnologías</h4>
         <ul className="tecnologias-grupo">
