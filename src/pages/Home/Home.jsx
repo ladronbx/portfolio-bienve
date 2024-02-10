@@ -35,11 +35,11 @@ import imgPostman from '../../assets/build/img/postman.png';
 import imgDocker from '../../assets/build/img/docker.png';
 import imgGit from '../../assets/build/img/git-icon.png';
 import imgGitHub from '../../assets/build/img/GitHub_Icon.png';
+import imgJava from '../../assets/build/img/java.png';
 
 
 import './Home.css';
 import { Intro } from '../../common/Intro/Intro';
-import { Link } from 'react-scroll';
 import { ScrollLink } from '../../common/ScrollLink/ScrollLink';
 
 export const Home = () => {
@@ -61,31 +61,61 @@ export const Home = () => {
         <img className="img-cabecera-style h-screen object-cover object-center w-full" src={imgCabecera} alt="name" draggable="false" />
       </div>
 
-      <div id="section2" className='flex justify-center items-center flex-wrap h-screen' style={{ scrollSnapAlign: 'start' }}>
-        <div className='row flex items-center flex-wrap h-screen'>
-          <div className='col'>
-            <div className='p-30 m-30 '>
+      <div id="section2" className='flex justify-center items-center flex-wrap relative' style={{ scrollSnapAlign: 'start' }}>
+
+        <div className='row flex flex-col items-center flex-wrap lg:flex-row align-middle'>
+          <div className='col flex justify-center'>
+            <img src={gifIntro} alt="GIF" className="w-70 h-full object-contain" />
+          </div>
+
+          <div className='col flex justify-center'>
+            <div className='m-30 p-30'>
               <Intro />
               <div className='flex justify-end items-end'>
                 <ScrollLink to={"section3"} text={'>>'} />
               </div>
             </div>
           </div>
-          <div className='col'>
-            <div className='p-30 m-30'>
-              <img src={gifIntro} alt="GIF" />
-            </div>
-          </div>
         </div>
       </div>
 
-      <div id="section3" className='flex justify-center items-start flex-wrap h-screen' style={{ scrollSnapAlign: 'start' }}>
-        <div className='row flex items-start flex-wrap h-screen'>
-          <div className='col flex items-middle '>
-            <div className='m-30'><img src={gifCode} alt="GIF" />
-            </div>
-          </div>
-          <div className='col flex items-start h-screen'>
+      <div className='tecnologias relative' id="section3" style={{ scrollSnapAlign: 'start' }}>
+        <div className='row p-30 flex items-center flex-wrap'>
+
+          <h2 className='tecnologias-title text-cyan-700'>Tecnologías</h2>
+          <ul className="tecnologias-grupo">
+            <li><img src={imgHtml} alt="HTML_Icon" /><span>HTML</span></li>
+            <li><img src={imgCss} alt="CSS_Icon" aria-hidden="true" /><span>CSS</span></li>
+            <li><img src={imgDefaultTech} alt="" aria-hidden="true" /><span>FlexBox</span></li>
+            <li><img src={imgBootstrap} alt="Bootstrap logo" aria-hidden="true" /><span>Bootstrap</span></li>
+            <li><img src={imgTailwind} alt="tailwind_avatar" aria-hidden="true" /><span>Tailwind</span></li>
+            <li><img src={imgReact} alt="React_Icon" aria-hidden="true" /><span>React</span></li>
+            <li><img src={imgRedux} alt="Redux_Icon" aria-hidden="true" /><span>Redux</span></li>
+            <li><img src={imgFigma} alt="Figma" aria-hidden="true" /><span>Figma</span></li>
+            <li><img src={imgJs} alt="JavaScript_Icon" aria-hidden="true" /><span>JavaScript</span></li>
+            <li><img src={imgTypescript} alt="Typescript_Icon" aria-hidden="true" /><span>TypeScript</span></li>
+            <li><img src={imgNode} alt="Node_Icon" aria-hidden="true" /><span>NodeJS</span></li>
+            <li><img src={imgExpress} alt="Express" aria-hidden="true" /><span>Express</span></li>
+            <li><img src={imgTypeORM} alt="avatar" aria-hidden="true" /><span>TypeORM</span></li>
+            <li><img src={imgSql} alt="SQL_Icon" aria-hidden="true" /><span>SQL</span></li>
+            <li><img src={imgMysql} alt="MySQL_Icon" aria-hidden="true" /><span>MySQL</span></li>
+            <li><img src={imgMongo} alt="MongoDB_Icon" aria-hidden="true" /><span>MongoDB</span></li>
+            <li><img src={imgPhp} alt="PHP_Icon" aria-hidden="true" /><span>PHP</span></li>
+            <li><img src={imgLaravel} alt="Laravel_Icon" aria-hidden="true" /><span>Laravel</span></li>
+            <li><img src={imgJava} alt="Java_Icon" aria-hidden="true" /><span>Java</span></li>
+            <li><img src={imgAWS} alt="Deploy_AWS" aria-hidden="true" /><span>Deploy AWS</span></li>
+            <li><img src={imgPostman} alt="Postman" aria-hidden="true" /><span>Postman</span></li>
+            <li><img src={imgDocker} alt="Docker" aria-hidden="true" /><span>Docker</span></li>
+            <li><img src={imgGit} alt="Git_icon" aria-hidden="true" /><span>Git</span></li>
+            <li><img src={imgGitHub} alt="GitHub_Icon" aria-hidden="true" /><span>Github</span></li>
+          </ul>
+        </div >
+      </div >
+
+
+      <div id="section4" className='flex justify-center items-center flex-wrap' style={{ scrollSnapAlign: 'start' }}>
+        <div className='row flex flex-col items-center flex-wrap lg:flex-row align-middle'>
+          <div className='col flex justify-center'>
             <div className='m-30 '>
               <h2 className='text-cyan-700'>Formación académica</h2>
               <Education
@@ -100,56 +130,24 @@ export const Home = () => {
                 year='2015'
                 location='Valencia, Spain'
               />
-            </div>
-          </div>
 
-          <div className='col flex items-start h-screen'>
-            <div className='m-30'>
-
-              <h2 className='text-cyan-700'>Idiomas</h2>
+              <h2 className='text-cyan-700 mt-[50px]'>Idiomas</h2>
               <Language language='Spanish' level='Native' />
               <Language language='English' level='Certificado A2' />
               <Language language='Valenciano' level='Alto' />
-
-              <div className='flex justify-end items-end mt-[70px]'>
-                <ScrollLink to={"section4"} text={'>>'} />
-              </div>
-
             </div>
+          </div>
+
+          <div className='col flex justify-center'>
+            <img src={gifCode} alt="GIF" className="w-70 h-full object-contain" />
           </div>
         </div>
       </div>
 
-      <div className='tecnologias h-screen' id="section4" style={{ scrollSnapAlign: 'start' }}>
-        <img src={gifCode2} alt="GIF" />
-        <h4 className='tecnologias-title'>Tecnologías</h4>
-        <ul className="tecnologias-grupo">
-          <li><img src={imgHtml} alt="HTML_Icon" /><span>HTML</span></li>
-          <li><img src={imgCss} alt="CSS_Icon" aria-hidden="true" /><span>CSS</span></li>
-          <li><img src={imgDefaultTech} alt="" aria-hidden="true" /><span>FlexBox</span></li>
-          <li><img src={imgBootstrap} alt="Bootstrap logo" aria-hidden="true" /><span>Bootstrap</span></li>
-          <li><img src={imgTailwind} alt="tailwind_avatar" aria-hidden="true" /><span>Tailwind</span></li>
-          <li><img src={imgReact} alt="React_Icon" aria-hidden="true" /><span>React</span></li>
-          <li><img src={imgRedux} alt="Redux_Icon" aria-hidden="true" /><span>Redux</span></li>
-          <li><img src={imgFigma} alt="Figma" aria-hidden="true" /><span>Figma</span></li>
-          <li><img src={imgJs} alt="JavaScript_Icon" aria-hidden="true" /><span>JavaScript</span></li>
-          <li><img src={imgTypescript} alt="Typescript_Icon" aria-hidden="true" /><span>TypeScript</span></li>
-          <li><img src={imgNode} alt="Node_Icon" aria-hidden="true" /><span>NodeJS</span></li>
-          <li><img src={imgExpress} alt="Express" aria-hidden="true" /><span>Express</span></li>
-          <li><img src={imgTypeORM} alt="avatar" aria-hidden="true" /><span>TypeORM</span></li>
-          <li><img src={imgSql} alt="SQL_Icon" aria-hidden="true" /><span>SQL</span></li>
-          <li><img src={imgMysql} alt="MySQL_Icon" aria-hidden="true" /><span>MySQL</span></li>
-          <li><img src={imgMongo} alt="MongoDB_Icon" aria-hidden="true" /><span>MongoDB</span></li>
-          <li><img src={imgPhp} alt="PHP_Icon" aria-hidden="true" /><span>PHP</span></li>
-          <li><img src={imgLaravel} alt="Laravel_Icon" aria-hidden="true" /><span>Laravel</span></li>
-          <li><img src={imgAWS} alt="Deploy_AWS" aria-hidden="true" /><span>Deploy AWS</span></li>
-          <li><img src={imgPostman} alt="Postman" aria-hidden="true" /><span>Postman</span></li>
-          <li><img src={imgDocker} alt="Docker" aria-hidden="true" /><span>Docker</span></li>
-          <li><img src={imgGit} alt="Git_icon" aria-hidden="true" /><span>Git</span></li>
-          <li><img src={imgGitHub} alt="GitHub_Icon" aria-hidden="true" /><span>Github</span></li>
-        </ul>
-      </div >
-      <Link to="section6" smooth={true} duration={500} offset={-50}>Ver más</Link>
+
+
+
     </div >
+
   );
 };
