@@ -57,15 +57,15 @@ export const Home = () => {
         <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
           <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[20px]'>Web developer</h2>
           <Contact />
+          <div className='flex justify-end items-end mt-[30px]'>
+            <ScrollLink to={"section2"} />
+          </div>
         </div>
+
       </div>
 
       <div className="z-[-4]" style={{ scrollSnapAlign: 'start' }}>
         <img className="img-cabecera-style h-screen object-cover object-center w-full" src={imgCabecera} alt="name" draggable="false" />
-      </div>
-
-      <div className="boton-intro absolute top-[500px] left-0 z-10 p-4">
-        <ScrollLink to={"section2"} text={'¿Quién soy?'} />
       </div>
 
       <div id="section2" className='flex justify-center items-center flex-wrap relative' style={{ scrollSnapAlign: 'start' }}>
@@ -78,8 +78,8 @@ export const Home = () => {
           <div className='col flex justify-center'>
             <div className='m-30 p-30'>
               <Intro />
-              <div className='flex justify-end items-end'>
-                <ScrollLink to={"section3"} text={'>>'} />
+              <div className='flex justify-end items-end mt-[30px]'>
+                <ScrollLink to={"section3"} />
               </div>
             </div>
           </div>
@@ -116,6 +116,7 @@ export const Home = () => {
             <li><img src={imgGit} alt="Git_icon" aria-hidden="true" /><span>Git</span></li>
             <li><img src={imgGitHub} alt="GitHub_Icon" aria-hidden="true" /><span>Github</span></li>
           </ul>
+
         </div >
       </div >
 
@@ -143,21 +144,21 @@ export const Home = () => {
               <Language language='English' level='Certificado A2' />
               <Language language='Valenciano' level='Alto' />
             </div>
+
           </div>
 
           <div className='col flex justify-center'>
             <img src={gifCode} alt="GIF" className="w-70 h-full object-contain" />
+            <div className='flex justify-end items-end m-[30px]'>
+              <ScrollLink to={"section5"} />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className='section-projects'>
+      <div className='section-projects' id='section5'>
         < GroupProjects />
-
       </div>
-
-
-
 
     </div >
 

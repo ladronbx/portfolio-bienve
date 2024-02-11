@@ -39,7 +39,11 @@ export const GroupProjects = () => {
                     technologies={['React', 'CSS', 'Typescript', 'Node.js', 'Express', 'SQL']}
                     link='https://github.com/ladronbx/tattoo-studio-frontend-react.git'
                     code='https://github.com/ladronbx/tattoo-studio-frontend-react.git'
+                    video={videoKatana}
+                    img1={imgKatana1}
+                    img2={imgKatana2}
                 />
+
 
                 <Project
                     title="Nintendo Switch Interactiva"
@@ -47,7 +51,11 @@ export const GroupProjects = () => {
                     technologies={['HTML', 'CSS']}
                     link='https://ladronbx.github.io/nintendo-switch-interactiva/'
                     code='https://github.com/ladronbx/nintendo-switch-interactiva.git'
+                    video={videoKatana}
+                    img1={imgKatana1}
+                    img2={imgKatana2}
                 />
+
 
                 <Project
                     title='Itinera'
@@ -55,6 +63,9 @@ export const GroupProjects = () => {
                     technologies={['React', 'CSS', 'JavaScript', 'Node.js', 'PHP', 'Laravel', 'SQL']}
                     link='https://github.com/ladronbx/itinera-proyecto-final-react'
                     code='https://github.com/ladronbx/itinera-proyecto-final-react'
+                    video={videoKatana}
+                    img1={imgKatana1}
+                    img2={imgKatana2}
                 />
 
                 <Project
@@ -63,8 +74,11 @@ export const GroupProjects = () => {
                     longDescription='Aplicación web LFG que permita a los usuarios registrarse, autenticarse, crear y unirse a partidas de videojuegos, así como intercambiar mensajes en un chat común. El objetivo es fomentar la socialización y compartir momentos de ocio.'
                     technologies={['PHP', 'Node.js', 'Laravel', 'SQL']}
                     link='https://github.com/ladronbx/GameRoom-LFG-PGP-Laravel.git'
-
+                    video={videoKatana}
+                    img1={imgKatana1}
+                    img2={imgKatana2}
                 />
+
             </div>
 
         </>
