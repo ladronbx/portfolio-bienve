@@ -89,7 +89,7 @@ export const Home = () => {
       <div className='tecnologias relative' id="section3" style={{ scrollSnapAlign: 'start' }}>
         <div className='row pt-[40px] flex items-center flex-wrap'>
 
-          <h2 className='tecnologias-title text-cyan-700'>Tecnologías</h2>
+          <h2 className='tecnologias-title text-purple-700'>Tecnologías</h2>
           <ul className="tecnologias-grupo">
             <li><img src={imgHtml} alt="HTML_Icon" /><span>HTML</span></li>
             <li><img src={imgCss} alt="CSS_Icon" aria-hidden="true" /><span>CSS</span></li>
@@ -125,7 +125,7 @@ export const Home = () => {
         <div className='row flex flex-col items-center flex-wrap lg:flex-row align-middle'>
           <div className='col flex justify-center'>
             <div className='m-30 '>
-              <h2 className='text-cyan-700'>Formación académica</h2>
+              <h2 className='text-purple-700 titles'>Formación académica</h2>
               <Education
                 title='Bootcamp Full Stack Web Developer'
                 academy='GeeksHubs Academy'
@@ -139,7 +139,7 @@ export const Home = () => {
                 location='Valencia, Spain'
               />
 
-              <h2 className='text-cyan-700 mt-[50px]'>Idiomas</h2>
+              <h2 className='text-purple-700 mt-[50px] titles'>Idiomas</h2>
               <Language language='Spanish' level='Native' />
               <Language language='English' level='Certificado A2' />
               <Language language='Valenciano' level='Alto' />

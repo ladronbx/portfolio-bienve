@@ -9,6 +9,7 @@ import './Project.css';
 
 export const Project = ({ title, description, longDescription, technologies, link, code, video, img1, img2, img3, img4, img5 }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [fullscreenImage, setFullscreenImage] = useState(null);
 
     const openModal = () => {
         setIsModalOpen(true);
@@ -16,6 +17,14 @@ export const Project = ({ title, description, longDescription, technologies, lin
 
     const closeModal = () => {
         setIsModalOpen(false);
+    };
+
+    const openFullscreen = (image) => {
+        setFullscreenImage(image);
+    };
+
+    const closeFullscreen = () => {
+        setFullscreenImage(null);
     };
 
     return (
@@ -46,6 +55,17 @@ export const Project = ({ title, description, longDescription, technologies, lin
                 </div>
             )}
 
+            {fullscreenImage && (
+                <div className="fixed top-0 left-0 z-50 w-full h-full bg-black bg-opacity-75 flex justify-center items-center" onClick={closeFullscreen}>
+                    <div className="relative">
+                        <button onClick={closeFullscreen} className="absolute top-0 right-0 m-4 text-red-600 hover:text-red-800">
+                            <FaTimes className="w-6 h-6" />
+                        </button>
+                        <img src={fullscreenImage} alt={title} className="max-h-full max-w-full" />
+                    </div>
+                </div>
+            )}
+
             <div className="flex justify-between items-center mb-4">
                 <a href={link} target="_blank" rel="noreferrer" className="inline-block bg-gray-400 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out no-underline uppercase">
                     Deploy
@@ -70,11 +90,11 @@ export const Project = ({ title, description, longDescription, technologies, lin
                         navigation={true}
                         className=""
                     >
-                        <SwiperSlide><img src={img1} alt={title} className="w-full rounded-md" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt={title} className="w-full rounded-md" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt={title} className="w-full rounded-md" /></SwiperSlide>
-                        <SwiperSlide><img src={img4} alt={title} className="w-full rounded-md" /></SwiperSlide>
-                        <SwiperSlide><img src={img5} alt={title} className="w-full rounded-md" /></SwiperSlide>
+                        <SwiperSlide><img src={img1} alt={title} className="w-full rounded-md" onClick={() => openFullscreen(img1)} /></SwiperSlide>
+                        <SwiperSlide><img src={img2} alt={title} className="w-full rounded-md" onClick={() => openFullscreen(img2)} /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt={title} className="w-full rounded-md" onClick={() => openFullscreen(img3)} /></SwiperSlide>
+                        <SwiperSlide><img src={img4} alt={title} className="w-full rounded-md" onClick={() => openFullscreen(img4)} /></SwiperSlide>
+                        <SwiperSlide><img src={img5} alt={title} className="w-full rounded-md" onClick={() => openFullscreen(img5)} /></SwiperSlide>
                     </Swiper>
                 </div>
             </div>

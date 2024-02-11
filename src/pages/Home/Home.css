@@ -2,12 +2,8 @@
     .tecnologias-grupo {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* 3 columnas */
         gap: 1rem;
     }
-
-
-
 
 }
 
@@ -44,17 +40,23 @@
 }
 
 .tecnologias-title {
-    text-align: center;
+    text-align: left;
     margin-top: 0px;
     margin-bottom: 1rem;
+    margin-left: 2rem;
     color: rgb(131, 126, 147);
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1;
-    font-weight: 900;
-    text-transform: uppercase;
     letter-spacing: 0.25em;
-    padding-bottom: 0.75rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid rgb(192, 190, 201);
+}
+.titles {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0.25em;
+    padding-bottom: 1rem;
 }
 
 li {

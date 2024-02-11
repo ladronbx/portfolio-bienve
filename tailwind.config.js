@@ -4,6 +4,10 @@ module.exports = {
   content: ['./src/**/*.jsx', './src/**/*.css'],
   theme: {
     extend: {
+      letterSpacing: {
+        'wider': '0.25em',
+        'widest': '0.5em',
+      },
       spacing: {
         '10': '10px',
         '30': '30px',
