@@ -2,8 +2,14 @@ import React from "react";
 import { Project } from '../Project/Project';
 
 import videoKatana from '../../assets/build/img-projects/demo-katana.mp4';
+import videoMaster from '../../assets/build/img-projects/demo-master.mp4';
+import videoMoto from '../../assets/build/img-projects/demo-moto.mp4';
 import imgKatana1 from '../../assets/build/img-projects/img-katana1.png';
 import imgKatana2 from '../../assets/build/img-projects/img-katana2.png';
+import imgMaster1 from '../../assets/build/img-projects/img-master1.png';
+import imgMaster2 from '../../assets/build/img-projects/img-master2.png';
+import imgMoto1 from '../../assets/build/img-projects/img-moto1.png';
+import imgMoto2 from '../../assets/build/img-projects/img-moto2.png';
 
 export const GroupProjects = () => {
     return (
@@ -26,11 +32,22 @@ export const GroupProjects = () => {
                     title='Mastermind'
                     description='Juego de lógica Mastermind'
                     technologies={['HTML', 'CSS', 'JavaScript']}
-                    link='https://github.com/ladronbx/mastermind'
+                    link='https://ladronbx.github.io/mastermind/'
                     code='https://github.com/ladronbx/mastermind'
-                    video={videoKatana}
-                    img1={imgKatana1}
-                    img2={imgKatana2}
+                    video={videoMaster}
+                    img1={imgMaster1}
+                    img2={imgMaster2}
+                />
+
+                <Project
+                    title='Maquetación de Página de producto'
+                    description='Maquetación de una página de producto para motos.'
+                    technologies={['React', 'Vite', 'Tailwind CSS']}
+                    link='https://main.d3n1an862zdtsv.amplifyapp.com/'
+                    code='https://github.com/ladronbx/react-swiper-tailwind-moto'
+                    video={videoMoto}
+                    img1={imgMoto1}
+                    img2={imgMoto2}
                 />
 
                 <Project
