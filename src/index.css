@@ -1242,11 +1242,6 @@ video {
     font-family: 'Roboto', monospace;
 }
 
-.hover\:rotate-90:hover {
-  --tw-rotate: 90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:animate-none:hover {
   animation: none;
 }
@@ -1259,22 +1254,6 @@ video {
 .hover\:text-red-800:hover {
   --tw-text-opacity: 1;
   color: rgb(153 27 27 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:fill-green-100 {
-  fill: #dcfce7;
-}
-
-.group:active .group-active\:fill-green-100 {
-  fill: #dcfce7;
-}
-
-.group:active .group-active\:stroke-green-200 {
-  stroke: #bbf7d0;
-}
-
-.group:active .group-active\:duration-0 {
-  transition-duration: 0s;
 }
 
 @media (min-width: 150px) {

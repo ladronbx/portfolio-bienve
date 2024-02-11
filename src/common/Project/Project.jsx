@@ -50,13 +50,12 @@ export const Project = ({ title, description, longDescription, technologies, lin
                 <a href={link} target="_blank" rel="noreferrer" className="inline-block bg-gray-400 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out no-underline uppercase">
                     Deploy
                 </a>
-                <button title="Add New" className="group cursor-pointer outline-none duration-300" onClick={openModal}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" className="stroke-green-400 fill-none group-hover:fill-green-100 group-active:stroke-green-200 group-active:fill-green-100 group-active:duration-0 duration-300 hover:rotate-90">
-                        <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" strokeWidth="1.5"></path>
-                        <path d="M8 12H16" strokeWidth="1.5"></path>
-                        <path d="M12 16V8" strokeWidth="1.5"></path>
+                <button title="Add New" className="button" onClick={openModal}>
+                    <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20px" height="20px">
+                        <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path>
                     </svg>
                 </button>
+
 
                 <a href={code} target="_blank" rel="noreferrer" className="inline-block bg-gray-400  hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out no-underline uppercase">
                     Código
