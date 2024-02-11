@@ -39,3 +39,7 @@
         box-shadow: 0 0 0 45px rgba(193, 244, 246, 0);
     }
 }
+
+.line-green{
+    border-bottom: 1px solid rgb(145, 246, 21);
+}
