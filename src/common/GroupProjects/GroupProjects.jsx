@@ -4,12 +4,18 @@ import { Project } from '../Project/Project';
 import videoKatana from '../../assets/build/img-projects/demo-katana.mp4';
 import videoMaster from '../../assets/build/img-projects/demo-master.mp4';
 import videoMoto from '../../assets/build/img-projects/demo-moto.mp4';
+import videoTattoo from '../../assets/build/img-projects/demo-tattoo.mp4';
 import imgKatana1 from '../../assets/build/img-projects/img-katana1.png';
 import imgKatana2 from '../../assets/build/img-projects/img-katana2.png';
 import imgMaster1 from '../../assets/build/img-projects/img-master1.png';
 import imgMaster2 from '../../assets/build/img-projects/img-master2.png';
 import imgMoto1 from '../../assets/build/img-projects/img-moto1.png';
 import imgMoto2 from '../../assets/build/img-projects/img-moto2.png';
+import imgTattoo1 from '../../assets/build/img-projects/img-tattoo-home.png';
+import imgTattoo2 from '../../assets/build/img-projects/img-tattoo-login.png';
+import imgTattoo3 from '../../assets/build/img-projects/panel-super-admin.png';
+import imgTattoo4 from '../../assets/build/img-projects/img-tattoo-getallusers.png';
+import imgTattoo5 from '../../assets/build/img-projects/img-tattoo-galeria.png';
 
 export const GroupProjects = () => {
     return (
@@ -26,6 +32,9 @@ export const GroupProjects = () => {
                     video={videoKatana}
                     img1={imgKatana1}
                     img2={imgKatana2}
+                    img3={imgKatana1}
+                    img4={imgKatana2}
+                    img5={imgKatana1}
                 />
 
                 <Project
@@ -37,6 +46,9 @@ export const GroupProjects = () => {
                     video={videoMaster}
                     img1={imgMaster1}
                     img2={imgMaster2}
+                    img3={imgMaster1}
+                    img4={imgMaster2}
+                    img5={imgMaster1}
                 />
 
                 <Project
@@ -48,17 +60,23 @@ export const GroupProjects = () => {
                     video={videoMoto}
                     img1={imgMoto1}
                     img2={imgMoto2}
+                    img3={imgMoto1}
+                    img4={imgMoto2}
+                    img5={imgMoto1}
                 />
 
                 <Project
                     title='Tatto studio gestión citas'
                     description='Aplicación para gestionar citas en un estudio de tatuajes'
                     technologies={['React', 'CSS', 'Typescript', 'Node.js', 'Express', 'SQL']}
-                    link='https://github.com/ladronbx/tattoo-studio-frontend-react.git'
-                    code='https://github.com/ladronbx/tattoo-studio-frontend-react.git'
-                    video={videoKatana}
-                    img1={imgKatana1}
-                    img2={imgKatana2}
+                    link='https://main.d3dpmgzgjyqa56.amplifyapp.com/'
+                    code='https://github.com/ladronbx/tattoo-studio-frontend-react'
+                    video={videoTattoo}
+                    img1={imgTattoo1}
+                    img2={imgTattoo2}
+                    img3={imgTattoo3}
+                    img4={imgTattoo4}
+                    img5={imgTattoo5}
                 />
 
 

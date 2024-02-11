@@ -7,7 +7,7 @@ import { FaTimes } from 'react-icons/fa';
 
 import './Project.css';
 
-export const Project = ({ title, description, longDescription, technologies, link, code, video, img1, img2 }) => {
+export const Project = ({ title, description, longDescription, technologies, link, code, video, img1, img2, img3, img4, img5 }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
@@ -19,7 +19,7 @@ export const Project = ({ title, description, longDescription, technologies, lin
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-md p-6 relative h-[670px]">
+        <div className="bg-white rounded-lg shadow-md p-6 relative h-[700px]">
             <h3 className="text-xl font-semibold mb-2 h-[50px]">{title}</h3>
             <p className="text-gray-700 mb-4 h-[100px]">{description}</p>
 
@@ -63,21 +63,25 @@ export const Project = ({ title, description, longDescription, technologies, lin
                 </a>
             </div>
 
-            <div className="h-[250px]">
+            <div className="h-[300px]">
                 <div className="flex justify-center align-middle mt-[20px]">
                     <Swiper
                         spaceBetween={30}
                         modules={[Navigation]}
                         navigation={true}
-                        className="h-[250px]"
+                        className=""
                     >
                         <SwiperSlide><img src={img1} alt={title} className="w-full rounded-md" /></SwiperSlide>
                         <SwiperSlide><img src={img2} alt={title} className="w-full rounded-md" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt={title} className="w-full rounded-md" /></SwiperSlide>
+                        <SwiperSlide><img src={img4} alt={title} className="w-full rounded-md" /></SwiperSlide>
+                        <SwiperSlide><img src={img5} alt={title} className="w-full rounded-md" /></SwiperSlide>
                     </Swiper>
                 </div>
             </div>
 
-            <div className="flex flex-wrap gap-2 mb-4">
+
+            <div className="flex flex-wrap gap-2 mt-4">
                 {technologies.map((tech, index) => (
                     <span key={index} className="bg-gray-200 text-gray-700 px-2 py-1 rounded-md">{tech}</span>
                 ))}

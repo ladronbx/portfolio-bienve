@@ -1,7 +1,16 @@
 .swiper-button-prev {
-    color:rgb(13, 80, 81);
+    color: rgb(13, 80, 81);
 }
 
 .swiper-button-next {
-    color:rgb(13, 80, 81); 
+    color: rgb(13, 80, 81);
+}
+
+.swiper-slide img {
+    filter: grayscale(100%) brightness(80%);
+}
+
+.swiper-slide:hover img {
+    transition: filter 0.3s ease-in-out;
+    filter: grayscale(0%) brightness(100%);
 }
