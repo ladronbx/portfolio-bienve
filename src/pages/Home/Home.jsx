@@ -38,9 +38,12 @@ import imgGitHub from '../../assets/build/img/GitHub_Icon.png';
 import imgJava from '../../assets/build/img/java.png';
 
 
+
+
 import './Home.css';
 import { Intro } from '../../common/Intro/Intro';
 import { ScrollLink } from '../../common/ScrollLink/ScrollLink';
+import { GroupProjects } from '../../common/GroupProjects/GroupProjects';
 
 export const Home = () => {
   return (
@@ -146,6 +149,11 @@ export const Home = () => {
             <img src={gifCode} alt="GIF" className="w-70 h-full object-contain" />
           </div>
         </div>
+      </div>
+
+      <div className='section-projects'>
+        < GroupProjects />
+
       </div>
 
 
