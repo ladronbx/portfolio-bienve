@@ -5,6 +5,7 @@ import videoKatana from '../../assets/build/img-projects/demo-katana.mp4';
 import videoMaster from '../../assets/build/img-projects/demo-master.mp4';
 import videoMoto from '../../assets/build/img-projects/demo-moto.mp4';
 import videoTattoo from '../../assets/build/img-projects/demo-tattoo.mp4';
+import videoNsw from '../../assets/build/img-projects/demo-nsw.mp4';
 import imgKatana1 from '../../assets/build/img-projects/img-katana1.png';
 import imgKatana2 from '../../assets/build/img-projects/img-katana2.png';
 import imgMaster1 from '../../assets/build/img-projects/img-master1.png';
@@ -16,6 +17,11 @@ import imgTattoo2 from '../../assets/build/img-projects/img-tattoo-login.png';
 import imgTattoo3 from '../../assets/build/img-projects/panel-super-admin.png';
 import imgTattoo4 from '../../assets/build/img-projects/img-tattoo-getallusers.png';
 import imgTattoo5 from '../../assets/build/img-projects/img-tattoo-galeria.png';
+import imgNsw1 from '../../assets/build/img-projects/img-nsw1.png';
+import imgNsw2 from '../../assets/build/img-projects/img-nsw2.png';
+import imgNsw3 from '../../assets/build/img-projects/img-nsw3.png';
+import imgNsw4 from '../../assets/build/img-projects/img-nsw4.png';
+import imgNsw5 from '../../assets/build/img-projects/img-nsw5.png';
 
 export const GroupProjects = () => {
     return (
@@ -85,10 +91,13 @@ export const GroupProjects = () => {
                     description="Un desafío construir el diseño de la consonla con código HTML y CSS"
                     technologies={['HTML', 'CSS']}
                     link='https://ladronbx.github.io/nintendo-switch-interactiva/'
-                    code='https://github.com/ladronbx/nintendo-switch-interactiva.git'
-                    video={videoKatana}
-                    img1={imgKatana1}
-                    img2={imgKatana2}
+                    code='https://github.com/ladronbx/nintendo-switch-interactiva'
+                    video={videoNsw}
+                    img1={imgNsw1}
+                    img2={imgNsw2}
+                    img3={imgNsw3}
+                    img4={imgNsw4}
+                    img5={imgNsw5}
                 />
 
 
