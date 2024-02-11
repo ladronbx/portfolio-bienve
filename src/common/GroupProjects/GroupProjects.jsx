@@ -22,6 +22,14 @@ import imgNsw2 from '../../assets/build/img-projects/img-nsw2.png';
 import imgNsw3 from '../../assets/build/img-projects/img-nsw3.png';
 import imgNsw4 from '../../assets/build/img-projects/img-nsw4.png';
 import imgNsw5 from '../../assets/build/img-projects/img-nsw5.png';
+import imgItinera1 from '../../assets/build/img-projects/img-itinera1.png';
+import imgItinera2 from '../../assets/build/img-projects/img-itinera2.png';
+import imgItinera3 from '../../assets/build/img-projects/img-itinera3.png';
+import imgItinera4 from '../../assets/build/img-projects/img-itinera4.png';
+import imgItinera5 from '../../assets/build/img-projects/img-itinera5.png';
+import imgGr1 from '../../assets/build/img-projects/img-Gr1.png';
+import imgGr2 from '../../assets/build/img-projects/img-Gr2.png';
+import imgGr3 from '../../assets/build/img-projects/img-Gr3.png';
 
 export const GroupProjects = () => {
     return (
@@ -105,11 +113,14 @@ export const GroupProjects = () => {
                     title='Itinera'
                     description='Aplicación web para gestionar itinerarios de viajes'
                     technologies={['React', 'CSS', 'JavaScript', 'Node.js', 'PHP', 'Laravel', 'SQL']}
-                    link='https://github.com/ladronbx/itinera-proyecto-final-react'
+                    link='https://main.doeffgwvxcsjl.amplifyapp.com/'
                     code='https://github.com/ladronbx/itinera-proyecto-final-react'
                     video={videoKatana}
-                    img1={imgKatana1}
-                    img2={imgKatana2}
+                    img1={imgItinera1}
+                    img2={imgItinera2}
+                    img3={imgItinera3}
+                    img4={imgItinera4}
+                    img5={imgItinera5}
                 />
 
                 <Project
@@ -117,10 +128,14 @@ export const GroupProjects = () => {
                     description='Una aplicación web LFG (Looking for Group), que permite contactar entre usuarios para formar grupos y jugar videojuegos como actividad de ocio afterwork.'
                     longDescription='Aplicación web LFG que permita a los usuarios registrarse, autenticarse, crear y unirse a partidas de videojuegos, así como intercambiar mensajes en un chat común. El objetivo es fomentar la socialización y compartir momentos de ocio.'
                     technologies={['PHP', 'Node.js', 'Laravel', 'SQL']}
-                    link='https://github.com/ladronbx/GameRoom-LFG-PGP-Laravel.git'
-                    video={videoKatana}
-                    img1={imgKatana1}
-                    img2={imgKatana2}
+                    link='https://github.com/ladronbx/GameRoom-LFG-PGP-Laravel'
+                    code='https://github.com/ladronbx/GameRoom-LFG-PGP-Laravel'
+                    img1={imgGr1}
+                    img2={imgGr2}
+                    img3={imgGr3}
+                    img4={imgGr1}
+                    img5={imgGr2}
+
                 />
 
             </div>
