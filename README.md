@@ -1,7 +1,11 @@
 # Portfolio
 
+## Descripción
+Este proyecto consiste en una aplicación web que sirve como portfolio personal. Funciona como una carta de presentación y un curriculum vitae en línea.
+
+
 ## Deploy
-`https://bienveladron.com/`
+`https://ladron-bienve.com/`
 
 
 ## Tecnologías Utilizadas

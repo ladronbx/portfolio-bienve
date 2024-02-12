@@ -2,15 +2,18 @@ import React from 'react';
 import { Education } from '../../common/Education/Education';
 import { Language } from '../../common/Language/Language';
 import { Contact } from '../../common/Contact/Contact';
-import name from '../../assets/name-cabecera.png';
-import imgCabecera from '../../assets/build/img/home-header-container-img.png';
+import { Intro } from '../../common/Intro/Intro';
+import { ScrollLink } from '../../common/ScrollLink/ScrollLink';
+import { GroupProjects } from '../../common/GroupProjects/GroupProjects';
+import './Home.css';
 
 //importaciones gifs
 import gifIntro from '../../assets/build/img/code.gif';
 import gifCode from '../../assets/build/img/code1.gif';
-import gifCode2 from '../../assets/build/img/code2.gif';
 
-//importaciones iconos tecnologías
+//importaciones imágenes
+import name from '../../assets/name-cabecera.png';
+import imgCabecera from '../../assets/build/img/home-header-container-img.png';
 import imgAWS from '../../assets/build/img/aws.png';
 import imgHtml from '../../assets/build/img/html5.png';
 import imgCss from '../../assets/build/img/css.png';
@@ -36,10 +39,6 @@ import imgGit from '../../assets/build/img/git-icon.png';
 import imgGitHub from '../../assets/build/img/GitHub_Icon.png';
 import imgJava from '../../assets/build/img/java.png';
 
-import './Home.css';
-import { Intro } from '../../common/Intro/Intro';
-import { ScrollLink } from '../../common/ScrollLink/ScrollLink';
-import { GroupProjects } from '../../common/GroupProjects/GroupProjects';
 
 export const Home = () => {
   const handleDownloadCV = () => {
@@ -88,12 +87,9 @@ export const Home = () => {
             <div><ScrollLink to={"section5"} text={'Proyectos'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
             <div><ScrollLink to={"section4"} text={'Formación'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
             <div><ScrollLink to={"section3"} text={'Tecnologías'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
-
           </div>
         </div>
       </div>
-
-
 
       <div id="section2" className='flex justify-center items-center flex-wrap relative' style={{ scrollSnapAlign: 'start' }}>
 
@@ -143,10 +139,8 @@ export const Home = () => {
             <li><img src={imgGit} alt="Git_icon" aria-hidden="true" /><span>Git</span></li>
             <li><img src={imgGitHub} alt="GitHub_Icon" aria-hidden="true" /><span>Github</span></li>
           </ul>
-
         </div >
       </div >
-
 
       <div id="section4" className='flex justify-center items-center flex-wrap' style={{ scrollSnapAlign: 'start' }}>
         <div className='row flex flex-col items-center flex-wrap lg:flex-row align-middle'>
@@ -165,13 +159,11 @@ export const Home = () => {
                 year='2015'
                 location='Valencia, Spain'
               />
-
               <h2 className='text-purple-700 mt-[50px] titles'>Idiomas</h2>
               <Language language='Español' level='Nativo' />
               <Language language='Inglés' level='Certificado A2' />
               <Language language='Valenciano' level='Alto' />
             </div>
-
           </div>
 
           <div className='col flex justify-center'>
@@ -188,21 +180,24 @@ export const Home = () => {
         <GroupProjects />
       </div>
 
+      <div className='section-contacto flex justify-center align-middle'>
+        <Contact />
+        <button className="Download-button mb-4 bg-gray-800 " onClick={handleDownloadCV}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="20"
+            viewBox="0 0 640 512"
+          >
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
+              fill="white"
+            ></path>
+          </svg>
+          <span>Download CV</span>
+        </button>
+      </div>
 
-      {/* <button className="Download-button mb-4 bg-gray-800 " onClick={handleDownloadCV}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="16"
-          width="20"
-          viewBox="0 0 640 512"
-        >
-          <path
-            d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
-            fill="white"
-          ></path>
-        </svg>
-        <span>Download CV</span>
-      </button>  */}
     </div >
 
   );
