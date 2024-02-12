@@ -174,8 +174,8 @@ export const Home = () => {
               />
 
               <h2 className='text-purple-700 mt-[50px] titles'>Idiomas</h2>
-              <Language language='Spanish' level='Native' />
-              <Language language='English' level='Certificado A2' />
+              <Language language='Español' level='Nativo' />
+              <Language language='Inglés' level='Certificado A2' />
               <Language language='Valenciano' level='Alto' />
             </div>
 
