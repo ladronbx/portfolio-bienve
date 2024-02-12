@@ -51,8 +51,8 @@ import { GroupProjects } from '../../common/GroupProjects/GroupProjects';
 export const Home = () => {
   const handleDownloadCV = () => {
     const downloadLink = document.createElement('a');
-    downloadLink.href = '/assets/build/CV - M bienvenida ladrón.pdf';
-    downloadLink.download = 'CV - M bienvenida ladrón.pdf';
+    downloadLink.href = 'CV-MBienvenida.pdf';
+    downloadLink.download = 'CV-MBienvenida.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
