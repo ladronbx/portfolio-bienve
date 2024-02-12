@@ -28,13 +28,13 @@ export const Project = ({ title, description, longDescription, technologies, lin
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-md p-6 relative h-[750px] m-2">
+        <div className=" rounded-lg shadow-md p-6 relative cards-projects m-2">
             <div className="p-1 flex justify-center items-center text-center h-[80px]">
                 <h3 className="text-2xl font-semibold text-black title-project">{title}</h3>
             </div>
 
             <div className="line-green mb-2"></div>
-            <p className="text-gray-700 mb-2 h-[150px]">{description}</p>
+            <p className="text-gray-700 mb-2 card-project-description">{description}</p>
 
             {isModalOpen && (
                 <div className="fixed top-0 left-0 z-50 w-full h-full bg-black bg-opacity-75 flex justify-center items-center">

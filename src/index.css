@@ -670,6 +670,9 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-\[100px\] {
+  margin-top: 100px;
+}
 .mt-\[20px\] {
   margin-top: 20px;
 }
@@ -727,14 +730,8 @@ video {
 .h-6 {
   height: 1.5rem;
 }
-.h-\[150px\] {
-  height: 150px;
-}
 .h-\[200px\] {
   height: 200px;
-}
-.h-\[750px\] {
-  height: 750px;
 }
 .h-\[80px\] {
   height: 80px;

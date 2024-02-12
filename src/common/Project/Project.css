@@ -6,7 +6,7 @@
     color: rgb(122, 62, 162);
 }
 
-.swiper-button-prev:hover{
+.swiper-button-prev:hover {
     color: rgb(46, 231, 13)
 }
 
@@ -48,6 +48,21 @@
     }
 }
 
-.line-green{
+.line-green {
     border-bottom: 1px solid rgb(145, 246, 21);
+}
+
+.cards-projects {
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 768px) {
+
+    .cards-projects {
+        height: 750px;
+    }
+
+    .card-project-description{
+        height: 150px;
+    }
 }
