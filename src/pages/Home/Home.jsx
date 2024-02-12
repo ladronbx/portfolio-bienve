@@ -102,7 +102,7 @@ export const Home = () => {
 
 
 
-      <div id="section2" className='flex justify-center items-center flex-wrap relative mt-[100px]' style={{ scrollSnapAlign: 'start' }}>
+      <div id="section2" className='flex justify-center items-center flex-wrap relative' style={{ scrollSnapAlign: 'start' }}>
 
         <div className='row flex flex-col items-center flex-wrap lg:flex-row align-middle'>
           <div className='col flex justify-center'>
@@ -159,7 +159,7 @@ export const Home = () => {
         <div className='row flex flex-col items-center flex-wrap lg:flex-row align-middle'>
           <div className='col flex justify-center'>
             <div className='m-30 '>
-              <h2 className='text-purple-700 titles mt-[100px]'>Formación académica</h2>
+              <h2 className='text-purple-700 titles'>Formación académica</h2>
               <Education
                 title='Bootcamp Full Stack Web Developer'
                 academy='GeeksHubs Academy'
@@ -191,7 +191,7 @@ export const Home = () => {
       </div>
 
       <div className='section-projects' id='section5'>
-        <h1 className='text-purple-700 titles mt-[100px] text-center border-b border-white p-6 text-[3rem]'>Últimos proyectos</h1>
+        <h1 className='text-purple-700 titles mt-[20px] text-center border-b border-white p-6 text-[3rem]'>Últimos proyectos</h1>
         <GroupProjects />
       </div>
 
