@@ -5,7 +5,6 @@ import { Contact } from '../../common/Contact/Contact';
 import name from '../../assets/name-cabecera.png';
 import imgCabecera from '../../assets/build/img/home-header-container-img.png';
 
-
 //importaciones gifs
 import gifIntro from '../../assets/build/img/code.gif';
 import gifCode from '../../assets/build/img/code1.gif';
@@ -37,16 +36,10 @@ import imgGit from '../../assets/build/img/git-icon.png';
 import imgGitHub from '../../assets/build/img/GitHub_Icon.png';
 import imgJava from '../../assets/build/img/java.png';
 
-
-
-
 import './Home.css';
 import { Intro } from '../../common/Intro/Intro';
 import { ScrollLink } from '../../common/ScrollLink/ScrollLink';
 import { GroupProjects } from '../../common/GroupProjects/GroupProjects';
-
-
-
 
 export const Home = () => {
   const handleDownloadCV = () => {
@@ -196,11 +189,7 @@ export const Home = () => {
       </div>
 
 
-      {/* 
-
-      Aquí faltaría agregar el contacto y el botón de descargar CV de nuevo. 
-
-      <button className="Download-button mb-4 bg-gray-800 " onClick={handleDownloadCV}>
+      {/* <button className="Download-button mb-4 bg-gray-800 " onClick={handleDownloadCV}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="16"
@@ -213,8 +202,7 @@ export const Home = () => {
           ></path>
         </svg>
         <span>Download CV</span>
-      </button> */}
-
+      </button>  */}
     </div >
 
   );

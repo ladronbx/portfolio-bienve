@@ -64,10 +64,13 @@ export const Project = ({ title, description, longDescription, technologies, lin
                                     Close
                                 </button>
                             </div>
-                            <video controls autoPlay className="w-full">
-                                <source src={video} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
+                            <div className="w-100 flex justify-center align-middle">
+                                <video controls autoPlay className="w-80">
+                                    <source src={video} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
                         </div>
                     </div>
                 )}
@@ -75,10 +78,11 @@ export const Project = ({ title, description, longDescription, technologies, lin
                 {fullscreenImage && (
                     <div className="fixed top-0 left-0 z-50 w-full h-full bg-black bg-opacity-75 flex justify-center items-center" onClick={closeFullscreen}>
                         <div className="relative">
-                            <button onClick={closeFullscreen} className="absolute top-0 right-0 m-4 text-red-600 hover:text-red-800">
-                                <FaTimes className="w-6 h-6" />
-                            </button>
-                            <img src={fullscreenImage} alt={title} className="max-h-full max-w-full" />
+
+                            <div className="w-full flex justify-center align-middle"><img src={fullscreenImage} alt={title} className="w-90 relative" />
+                            <button onClick={closeFullscreen} className="absolute right-0 text-red-600 hover:text-red-800">
+                                <FaTimes className="w-8 h-8" />
+                            </button></div>
                         </div>
                     </div>
                 )}
