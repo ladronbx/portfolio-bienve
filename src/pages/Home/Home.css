@@ -5,6 +5,10 @@
         gap: 1rem;
         margin-left: 6rem;
     }
+    .section-projects{
+        margin: 2%;
+        padding: 0em;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -13,6 +17,11 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         margin-left: 0rem;
+    }
+
+    .section-projects{
+        margin: 0em;
+        padding: 0em;
     }
 }
 

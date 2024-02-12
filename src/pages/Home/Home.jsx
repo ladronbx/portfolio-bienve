@@ -69,9 +69,6 @@ export const Home = () => {
         <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
           <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[20px]'>Web developer</h2>
           <Contact />
-
-
-
           <div className='flex justify-end items-end mt-[30px] flex-col'>
             <button className="Download-button mb-4 bg-gray-800 " onClick={handleDownloadCV}>
               <svg
@@ -87,6 +84,8 @@ export const Home = () => {
               </svg>
               <span>Download CV</span>
             </button>
+
+            <ScrollLink to={"section5"} text={'Ver proyectos'} customClass={'animate-none mb-6 no-underline pl-2'}/>
             <ScrollLink to={"section2"} />
           </div>
         </div>
