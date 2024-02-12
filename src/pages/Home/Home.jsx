@@ -61,16 +61,24 @@ export const Home = () => {
   return (
     <div className='container-body relative bg-black w-full overflow-x-hidden'>
 
-      <div className='container-img-contact-cabecera absolute z-[4] right-0 2xl:w-40 xl:w-40 lg:w-50 md:w-60 sm:w-70 xs:w-100'>
-        <div className='2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
-          <img className="w-100" src={name} alt="name" draggable="false" />
+      <div className='container-body relative bg-black w-full overflow-x-hidden'>
+        <div className='container-img-contact-cabecera absolute z-[4] right-0 2xl:w-40 xl:w-40 lg:w-50 md:w-60 sm:w-70 xs:w-100'>
+          <div className='2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
+            <img className="w-100" src={name} alt="name" draggable="false" />
+          </div>
+          <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
+            <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[20px]'>Web developer</h2>
+            <h3 className='text-right 2xl:text-[26px] xl:text-[20px] lg:text-[10px] md:text-[10px] sm:text-[10px] xs:text-[10px]'>ladronbravovlc@gmail.com</h3>
+            <Contact />
+          </div>
+          <div className='flex justify-end items-end mt-[30px]'>
+            <ScrollLink to={"section2"} />
+          </div>
         </div>
-
-        <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
-          <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[20px]'>Web developer</h2>
-          <Contact />
-          <div className='flex justify-end items-end mt-[30px] flex-col'>
-            <button className="Download-button mb-4 bg-gray-800 " onClick={handleDownloadCV}>
+        <div className="z-[-4]" style={{ scrollSnapAlign: 'start' }}>
+          <img className="img-cabecera-style h-screen object-cover object-center w-full" src={imgCabecera} alt="name" draggable="false" />
+          <div className="absolute bottom-0 left-0 mb-4 ml-4">
+            <button className="Download-button bg-gray-800 mb-4" onClick={handleDownloadCV}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="16"
@@ -84,17 +92,15 @@ export const Home = () => {
               </svg>
               <span>Download CV</span>
             </button>
+            <div><ScrollLink to={"section5"} text={'Proyectos'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
+            <div><ScrollLink to={"section4"} text={'Formación'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
+            <div><ScrollLink to={"section3"} text={'Tecnologías'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
 
-            <ScrollLink to={"section5"} text={'Ver proyectos'} customClass={'animate-none mb-6 no-underline pl-2'}/>
-            <ScrollLink to={"section2"} />
           </div>
         </div>
-
       </div>
 
-      <div className="z-[-4]" style={{ scrollSnapAlign: 'start' }}>
-        <img className="img-cabecera-style h-screen object-cover object-center w-full" src={imgCabecera} alt="name" draggable="false" />
-      </div>
+
 
       <div id="section2" className='flex justify-center items-center flex-wrap relative' style={{ scrollSnapAlign: 'start' }}>
 
@@ -185,8 +191,10 @@ export const Home = () => {
       </div>
 
       <div className='section-projects' id='section5'>
-        < GroupProjects />
+        <h1 className='text-purple-700 titles mt-[20px] text-center border-b border-white p-6 text-[3rem]'>Últimos proyectos</h1>
+        <GroupProjects />
       </div>
+
 
       {/* 
 

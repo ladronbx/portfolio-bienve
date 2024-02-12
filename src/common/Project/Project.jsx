@@ -104,7 +104,7 @@ export const Project = ({ title, description, longDescription, technologies, lin
                         spaceBetween={30}
                         modules={[Navigation]}
                         navigation={true}
-                        className=""
+                        className="hover:cursor-pointer"
                     >
                         <SwiperSlide><img src={img1} alt={title} className="w-full rounded-md" onClick={() => openFullscreen(img1)} /></SwiperSlide>
                         <SwiperSlide><img src={img2} alt={title} className="w-full rounded-md" onClick={() => openFullscreen(img2)} /></SwiperSlide>

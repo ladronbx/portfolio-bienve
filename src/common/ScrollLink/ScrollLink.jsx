@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-export const ScrollLink = ({ to, text, customClass }) => {
+export const ScrollLink = ({ to, text, customClass,customContainerClass }) => {
     return (
+        <div className={`animate-bounce hover:animate-none ${customContainerClass}`}>
         <Link
             to={to}
             smooth={true}
             duration={200}
             offset={0}
-            className={`cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none ${customClass}`}
+            className={`cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none no-underline p-1 py-2 ${customClass}`}
         >
-            {text}
+
             <svg
                 className="w-5 h-5 inline-block m-[10px]"
                 stroke="currentColor"
@@ -25,6 +26,7 @@ export const ScrollLink = ({ to, text, customClass }) => {
                     strokeLinecap="round"
                 ></path>
             </svg>
-        </Link>
+                        {text}
+        </Link></div>
     );
 }

@@ -6,6 +6,7 @@ import videoMaster from '../../assets/build/img-projects/demo-master.mp4';
 import videoMoto from '../../assets/build/img-projects/demo-moto.mp4';
 import videoTattoo from '../../assets/build/img-projects/demo-tattoo.mp4';
 import videoNsw from '../../assets/build/img-projects/demo-nsw.mp4';
+import videoItinera from '../../assets/build/img-projects/demo-itinera.mp4';
 import imgKatana1 from '../../assets/build/img-projects/img-katana1.png';
 import imgKatana2 from '../../assets/build/img-projects/img-katana2.png';
 import imgMaster1 from '../../assets/build/img-projects/img-master1.png';
@@ -39,8 +40,8 @@ export const GroupProjects = () => {
 
                 < Project
                     title='Katana Sushi - Restaurante japonés'
-                    description='Se trata de una carta de restaurante con ambiente japonés'
-                    technologies={['HTML', 'CSS', 'JavaScript']}
+                    description='Frontend. Se trata de una carta de restaurante con ambiente japonés'
+                    technologies={['HTML5', 'CSS', 'JavaScript', 'Bootstrap']}
                     link='https://ladronbx.github.io/katanasushi/'
                     code='https://github.com/ladronbx/katanasushi'
                     video={videoKatana}
@@ -52,9 +53,9 @@ export const GroupProjects = () => {
                 />
 
                 <Project
-                    title='Mastermind'
-                    description='Juego de lógica Mastermind'
-                    technologies={['HTML', 'CSS', 'JavaScript']}
+                    title='Juego de lógica Mastermind'
+                    description='Frontend. Juego de lógica Mastermind'
+                    technologies={['HTML5', 'CSS', 'JavaScript', 'Bootstrap']}
                     link='https://ladronbx.github.io/mastermind/'
                     code='https://github.com/ladronbx/mastermind'
                     video={videoMaster}
@@ -66,8 +67,8 @@ export const GroupProjects = () => {
                 />
 
                 <Project
-                    title='Maquetación de Página de producto'
-                    description='Maquetación de una página de producto para motos.'
+                    title='Maquetación de página de producto'
+                    description='Frontend. Maquetación de una página de producto para motos.'
                     technologies={['React', 'Vite', 'Tailwind CSS']}
                     link='https://main.d3n1an862zdtsv.amplifyapp.com/'
                     code='https://github.com/ladronbx/react-swiper-tailwind-moto'
@@ -81,8 +82,8 @@ export const GroupProjects = () => {
 
                 <Project
                     title='Tatto studio gestión citas'
-                    description='Aplicación para gestionar citas en un estudio de tatuajes'
-                    technologies={['React', 'CSS', 'Typescript', 'Node.js', 'Express', 'SQL']}
+                    description='Frontend + Backend. Aplicación para gestionar citas en un estudio de tatuajes'
+                    technologies={['HTML5','React',  'CSS', 'Bootstrap', 'Typescript', 'Node.js', 'Express', 'SQL', 'MySQL']}
                     link='https://main.d3dpmgzgjyqa56.amplifyapp.com/'
                     code='https://github.com/ladronbx/tattoo-studio-frontend-react'
                     video={videoTattoo}
@@ -96,8 +97,8 @@ export const GroupProjects = () => {
 
                 <Project
                     title="Nintendo Switch Interactiva"
-                    description="Un desafío construir el diseño de la consonla con código HTML y CSS"
-                    technologies={['HTML', 'CSS']}
+                    description="Frontend. Un desafío construir el diseño de la consonla únicamente con código HTML5 y CSS"
+                    technologies={['HTML5', 'CSS', 'JavaScript', 'Flexbox']}
                     link='https://ladronbx.github.io/nintendo-switch-interactiva/'
                     code='https://github.com/ladronbx/nintendo-switch-interactiva'
                     video={videoNsw}
@@ -110,12 +111,12 @@ export const GroupProjects = () => {
 
 
                 <Project
-                    title='Itinera'
-                    description='Aplicación web para gestionar itinerarios de viajes'
-                    technologies={['React', 'CSS', 'JavaScript', 'Node.js', 'PHP', 'Laravel', 'SQL']}
+                    title='Itinera - Planificación viajes'
+                    description='Frontend + Backend. Para gestionar itinerarios de viajes'
+                    technologies={['HTML5','React', 'CSS', 'Bootstrap', 'JavaScript', 'Node.js', 'PHP', 'Laravel', 'SQL', 'MySQL']}
                     link='https://main.doeffgwvxcsjl.amplifyapp.com/'
                     code='https://github.com/ladronbx/itinera-proyecto-final-react'
-                    video={videoKatana}
+                    video={videoItinera}
                     img1={imgItinera1}
                     img2={imgItinera2}
                     img3={imgItinera3}
@@ -124,10 +125,10 @@ export const GroupProjects = () => {
                 />
 
                 <Project
-                    title='Game room'
-                    description='Una aplicación web LFG (Looking for Group), que permite contactar entre usuarios para formar grupos y jugar videojuegos como actividad de ocio afterwork.'
+                    title='Game Room - LFG'
+                    description='Backend para web LFG (Looking for Group), que permite contactar entre usuarios para formar grupos y jugar videojuegos como actividad de ocio afterwork.'
                     longDescription='Aplicación web LFG que permita a los usuarios registrarse, autenticarse, crear y unirse a partidas de videojuegos, así como intercambiar mensajes en un chat común. El objetivo es fomentar la socialización y compartir momentos de ocio.'
-                    technologies={['PHP', 'Node.js', 'Laravel', 'SQL']}
+                    technologies={['PHP', 'Node.js', 'Laravel', 'SQL', 'MySQL']}
                     link='https://github.com/ladronbx/GameRoom-LFG-PGP-Laravel'
                     code='https://github.com/ladronbx/GameRoom-LFG-PGP-Laravel'
                     img1={imgGr1}
