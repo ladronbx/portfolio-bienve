@@ -1,83 +1,76 @@
-@media screen and (min-width: 700px) {
-    .tecnologias-grupo {
+@media screen and (min-width: 768px) {
+    .tecnologias ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+        margin-left: 6rem;
     }
-
 }
 
-@media screen and (max-width: 700px) {
-    .tecnologias img {
-        max-width: 100%;
-        height: auto;
-        margin: 1rem;
-        margin-left: 2rem;
+@media screen and (max-width: 767px) {
+    .tecnologias ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-left: 0rem;
     }
-
-    .tecnologias-grupo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tecnologias-title {
-        font-size: 0.25rem;
-    }
-
-
 }
 
 .tecnologias {
-    margin: 2rem auto 0px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(38, 26, 25, 0.04) 0px 1.51px 5.3px, rgba(38, 26, 25, 0.05) 0px 3.03px 4.54px;
+    margin: 2rem auto 0;
+    background-color: #fff;
+    box-shadow: 0 1.51px 5.3px rgba(38, 26, 25, 0.04), 0 3.03px 4.54px rgba(38, 26, 25, 0.05);
     border-radius: 8px;
-}
-
-.tecnologias img {
-    margin: 0.3rem;
-    margin-left: 6rem;
+    padding: 2rem;
 }
 
 .tecnologias-title {
     text-align: center;
-    margin-top: 0px;
     margin-bottom: 1rem;
-    color: rgb(131, 126, 147);
+    color: #837e93;
     font-size: 2rem;
     line-height: 1;
-    letter-spacing: 0.25em;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgb(192, 190, 201);
+    letter-spacing: 0.20em;
+    border-bottom: 1px solid #c0bec9;
+    padding-bottom: 1.5rem;
 }
-
 .titles {
     text-align: left;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
     line-height: 1;
-    letter-spacing: 0.25em;
-    padding-bottom: 1rem;
+    letter-spacing: 0.10em;
+    padding-bottom: 0.5rem;
 }
 
-li {
+.tecnologias img {
+    width: 20%;
+    max-width: 4rem;
+    height: auto;
+    margin: 0.3rem;
+}
+
+.tecnologias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tecnologias li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     font-weight: 900;
 }
 
-li img {
-    width: 4rem;
+.tecnologias li img {
     filter: grayscale(100%);
+    width: 2rem;
 }
 
-li img:hover {
-    width: 4rem;
-    height: 4rem;
+.tecnologias li img:hover {
     filter: grayscale(0%);
     cursor: pointer;
 }
-
 
 #section2,
 #section3,
