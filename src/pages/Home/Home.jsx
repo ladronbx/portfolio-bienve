@@ -5,6 +5,7 @@ import { Contact } from '../../common/Contact/Contact';
 import { Intro } from '../../common/Intro/Intro';
 import { ScrollLink } from '../../common/ScrollLink/ScrollLink';
 import { GroupProjects } from '../../common/GroupProjects/GroupProjects';
+import { ContactFooter } from '../../common/ContactFooter/ContactFooter';
 import './Home.css';
 
 //importaciones gifs
@@ -37,7 +38,7 @@ import imgPostman from '../../assets/build/img/postman.png';
 import imgDocker from '../../assets/build/img/docker.png';
 import imgGit from '../../assets/build/img/git-icon.png';
 import imgGitHub from '../../assets/build/img/GitHub_Icon.png';
-import imgJava from '../../assets/build/img/java.png';
+
 
 
 export const Home = () => {
@@ -58,11 +59,15 @@ export const Home = () => {
           <div className='2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
             <img className="w-100" src={name} alt="name" draggable="false" />
           </div>
+
           <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
             <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[20px]'>Web developer</h2>
-            <h3 className='text-right 2xl:text-[26px] xl:text-[20px] lg:text-[10px] md:text-[10px] sm:text-[10px] xs:text-[10px]'>ladronbravovlc@gmail.com</h3>
+            <a className='text-right 2xl:text-[18px] xl:text-[16px] lg:text-[10px] md:text-[10px] sm:text-[10px] xs:text-[10px] no-underline text-black' href="mailto:ladronbravovlc@gmail.com">ladronbravovlc@gmail.com</a>
             <Contact />
           </div>
+
+
+
           <div className='flex justify-end items-end mt-[30px]'>
             <ScrollLink to={"section2"} />
           </div>
@@ -112,7 +117,7 @@ export const Home = () => {
       <div className='tecnologias relative' id="section3" style={{ scrollSnapAlign: 'start' }}>
         <div className='row pt-[40px] flex items-center flex-wrap'>
 
-          <h2 className='tecnologias-title text-purple-700'>Tecnologías</h2>
+          <div><h1 className='tecnologias-title text-black '>Tecnologías</h1></div>
           <ul className="tecnologias-grupo">
             <li><img src={imgHtml} alt="HTML_Icon" /><span>HTML</span></li>
             <li><img src={imgCss} alt="CSS_Icon" aria-hidden="true" /><span>CSS</span></li>
@@ -132,7 +137,7 @@ export const Home = () => {
             <li><img src={imgMongo} alt="MongoDB_Icon" aria-hidden="true" /><span>MongoDB</span></li>
             <li><img src={imgPhp} alt="PHP_Icon" aria-hidden="true" /><span>PHP</span></li>
             <li><img src={imgLaravel} alt="Laravel_Icon" aria-hidden="true" /><span>Laravel</span></li>
-            <li><img src={imgJava} alt="Java_Icon" aria-hidden="true" /><span>Java</span></li>
+
             <li><img src={imgAWS} alt="Deploy_AWS" aria-hidden="true" /><span>Deploy AWS</span></li>
             <li><img src={imgPostman} alt="Postman" aria-hidden="true" /><span>Postman</span></li>
             <li><img src={imgDocker} alt="Docker" aria-hidden="true" /><span>Docker</span></li>
@@ -146,7 +151,7 @@ export const Home = () => {
         <div className='row flex flex-col items-center flex-wrap lg:flex-row align-middle'>
           <div className='col flex justify-center'>
             <div className='m-30 '>
-              <h2 className='text-purple-700 titles'>Formación académica</h2>
+              <h2 className='text-white titles line-green' style={{ textShadow: '0 0 2px rgb(145, 246, 21)' }}>Formación académica</h2>
               <Education
                 title='Bootcamp Full Stack Web Developer'
                 academy='GeeksHubs Academy'
@@ -159,7 +164,7 @@ export const Home = () => {
                 year='2015'
                 location='Valencia, Spain'
               />
-              <h2 className='text-purple-700 mt-[50px] titles'>Idiomas</h2>
+              <h2 className='text-white mt-[50px] titles line-green' style={{ textShadow: '0 0 2px rgb(145, 246, 21)' }}>Idiomas</h2>
               <Language language='Español' level='Nativo' />
               <Language language='Inglés' level='Certificado A2' />
               <Language language='Valenciano' level='Alto' />
@@ -175,14 +180,16 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className='section-projects' id='section5'>
-        <h1 className='text-purple-700 titles mt-[20px] text-center border-b border-white p-6 text-[3rem]'>Últimos proyectos</h1>
+      <div id="section5" className='section-projects'>
+        <h1 className='text-white titles mt-[20px] text-center border-b line-green p-6 text-[3rem]' style={{ textShadow: '0 0 2px rgb(145, 246, 21)' }}>Últimos proyectos</h1>
+
         <GroupProjects />
       </div>
 
-      <div className='section-contacto flex justify-center align-middle'>
-        <Contact />
-        <button className="Download-button mb-4 bg-gray-800 " onClick={handleDownloadCV}>
+
+      <div className='section-contacto flex flex-col items-center'>
+        <ContactFooter />
+        <button className="Download-button m-4 bg-gray-800 " onClick={handleDownloadCV}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="16"

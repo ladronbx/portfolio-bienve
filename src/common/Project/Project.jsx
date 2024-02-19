@@ -59,7 +59,7 @@ export const Project = ({ title, description, longDescription, technologies, lin
                                     </svg>
                                     code
                                 </a>
-                                <button onClick={closeModal} className=" hover:bg-gray-100 font-bold py-1 px-3 rounded-lg shadow-lg transition duration-300 ease-in-out no-underline uppercase flex items-center flex items-center text-red-600 hover:text-red-800">
+                                <button onClick={closeModal} className=" hover:bg-gray-100 font-bold py-1 px-3 rounded-lg shadow-lg transition duration-300 ease-in-out no-underline uppercase flex items-center text-red-600 hover:text-red-800">
                                     <FaTimes className="mr-2" />
                                     Close
                                 </button>
