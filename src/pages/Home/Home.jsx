@@ -14,30 +14,30 @@ import gifCode from '../../assets/build/img/code1.gif';
 
 //importaciones imágenes
 import name from '../../assets/name-cabecera.png';
-import imgCabecera from '../../assets/build/img/home-header-container-img.png';
-import imgAWS from '../../assets/build/img/aws.png';
-import imgHtml from '../../assets/build/img/html5.png';
-import imgCss from '../../assets/build/img/css.png';
-import imgDefaultTech from '../../assets/build/img/icon_default_tech.png';
-import imgBootstrap from '../../assets/build/img/bootstrap.png';
-import imgTailwind from '../../assets/build/img/tailwind.png';
-import imgReact from '../../assets/build/img/react.png';
-import imgRedux from '../../assets/build/img/redux.png';
-import imgFigma from '../../assets/build/img/figma.png';
-import imgJs from '../../assets/build/img/js.png';
-import imgTypescript from '../../assets/build/img/typescript.png';
-import imgNode from '../../assets/build/img/node.png';
-import imgExpress from '../../assets/build/img/express.png';
-import imgTypeORM from '../../assets/build/img/typeorm.png';
-import imgSql from '../../assets/build/img/sql.png';
-import imgMysql from '../../assets/build/img/mysql.png';
-import imgMongo from '../../assets/build/img/mongo.png';
-import imgPhp from '../../assets/build/img/php.png';
-import imgLaravel from '../../assets/build/img/laravel.png';
-import imgPostman from '../../assets/build/img/postman.png';
-import imgDocker from '../../assets/build/img/docker.png';
-import imgGit from '../../assets/build/img/git-icon.png';
-import imgGitHub from '../../assets/build/img/GitHub_Icon.png';
+import imgCabecera from '../../assets/build/img/home-header-container-img.webp';
+import imgAWS from '../../assets/build/img/aws.webp';
+import imgHtml from '../../assets/build/img/html5.webp';
+import imgCss from '../../assets/build/img/css.webp';
+import imgDefaultTech from '../../assets/build/img/icon_default_tech.webp';
+import imgBootstrap from '../../assets/build/img/bootstrap.webp';
+import imgTailwind from '../../assets/build/img/tailwind.webp';
+import imgReact from '../../assets/build/img/react.webp';
+import imgRedux from '../../assets/build/img/redux.webp';
+import imgFigma from '../../assets/build/img/figma.webp';
+import imgJs from '../../assets/build/img/js.webp';
+import imgTypescript from '../../assets/build/img/typescript.webp';
+import imgNode from '../../assets/build/img/node.webp';
+import imgExpress from '../../assets/build/img/express.webp';
+import imgTypeORM from '../../assets/build/img/typeorm.webp';
+import imgSql from '../../assets/build/img/sql.webp';
+import imgMysql from '../../assets/build/img/mysql.webp';
+import imgMongo from '../../assets/build/img/mongo.webp';
+import imgPhp from '../../assets/build/img/php.webp';
+import imgLaravel from '../../assets/build/img/laravel.webp';
+import imgPostman from '../../assets/build/img/postman.webp';
+import imgDocker from '../../assets/build/img/docker.webp';
+import imgGit from '../../assets/build/img/git-icon.webp';
+import imgGitHub from '../../assets/build/img/GitHub_Icon.webp';
 
 
 
@@ -60,10 +60,10 @@ export const Home = () => {
             <img className="w-100" src={name} alt="name" draggable="false" />
           </div>
 
-          <div className='text-right 2xl:p-[36px] xl:p-[30px] lg:p-[20px] md:p-[20px] sm:p-[16px] xs:p-[10px]'>
-            <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[20px]'>Web developer</h2>
-            <a className='text-right 2xl:text-[18px] xl:text-[16px] lg:text-[10px] md:text-[10px] sm:text-[10px] xs:text-[10px] no-underline text-black' href="mailto:ladronbravovlc@gmail.com">ladronbravovlc@gmail.com</a>
-            <Contact />
+          <div className='text-right 2xl:p-[26px] xl:p-[20px] lg:p-[10px] md:p-[10px] sm:p-[10px] xs:p-[10px]'>
+            <h2 className='text-right 2xl:text-[36px] xl:text-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px] xs:text-[20px]'>FullStack Developer</h2>
+            <a className='text-right 2xl:text-[20px] xl:text-[18px] lg:text-[12px] md:text-[12px] sm:text-[12px] xs:text-[12px] no-underline text-black' href="mailto:ladronbravovlc@gmail.com">ladronbravovlc@gmail.com</a>
+            <div className='2xl:p-[26px] xl:p-[20px] lg:p-[10px] md:p-[10px] sm:p-[10px] xs:p-[10px]]'><Contact /></div>
           </div>
 
 

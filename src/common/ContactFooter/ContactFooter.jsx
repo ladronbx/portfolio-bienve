@@ -1,7 +1,7 @@
 import React from 'react';
-import linkedinIcon from '../../assets/build/img/linkedin-icon.png';
-import githubIcon from '../../assets/build/img/github-icon.png';
-import mailIcon from '../../assets/build/img/mail-icon.png';
+import linkedinIcon from '../../assets/build/img/linkedin-icon.webp';
+import githubIcon from '../../assets/build/img/github-icon.webp';
+import mailIcon from '../../assets/build/img/mail-icon.webp';
 
 export const ContactFooter = () => {
     return (

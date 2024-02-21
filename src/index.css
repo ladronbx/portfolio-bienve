@@ -1447,8 +1447,8 @@ video {
     padding: 10px;
   }
 
-  .xs\:text-\[10px\] {
-    font-size: 10px;
+  .xs\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .xs\:text-\[20px\] {
@@ -1470,12 +1470,16 @@ video {
     width: 70%;
   }
 
+  .sm\:p-\[10px\] {
+    padding: 10px;
+  }
+
   .sm\:p-\[16px\] {
     padding: 16px;
   }
 
-  .sm\:text-\[10px\] {
-    font-size: 10px;
+  .sm\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .sm\:text-\[20px\] {
@@ -1501,12 +1505,16 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:p-\[10px\] {
+    padding: 10px;
+  }
+
   .md\:p-\[20px\] {
     padding: 20px;
   }
 
-  .md\:text-\[10px\] {
-    font-size: 10px;
+  .md\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .md\:text-\[20px\] {
@@ -1536,12 +1544,16 @@ video {
     flex-direction: row;
   }
 
+  .lg\:p-\[10px\] {
+    padding: 10px;
+  }
+
   .lg\:p-\[20px\] {
     padding: 20px;
   }
 
-  .lg\:text-\[10px\] {
-    font-size: 10px;
+  .lg\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .lg\:text-\[20px\] {
@@ -1563,12 +1575,16 @@ video {
     width: 40%;
   }
 
+  .xl\:p-\[20px\] {
+    padding: 20px;
+  }
+
   .xl\:p-\[30px\] {
     padding: 30px;
   }
 
-  .xl\:text-\[16px\] {
-    font-size: 16px;
+  .xl\:text-\[18px\] {
+    font-size: 18px;
   }
 
   .xl\:text-\[30px\] {
@@ -1590,12 +1606,16 @@ video {
     width: 40%;
   }
 
+  .\32xl\:p-\[26px\] {
+    padding: 26px;
+  }
+
   .\32xl\:p-\[36px\] {
     padding: 36px;
   }
 
-  .\32xl\:text-\[18px\] {
-    font-size: 18px;
+  .\32xl\:text-\[20px\] {
+    font-size: 20px;
   }
 
   .\32xl\:text-\[36px\] {
