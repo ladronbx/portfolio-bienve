@@ -1,16 +1,10 @@
 import React from 'react';
-import { Education } from '../../common/Education/Education';
-import { Language } from '../../common/Language/Language';
 import { Contact } from '../../common/Contact/Contact';
 import { Intro } from '../../common/Intro/Intro';
 import { ScrollLink } from '../../common/ScrollLink/ScrollLink';
 import { GroupProjects } from '../../common/GroupProjects/GroupProjects';
 import { ContactFooter } from '../../common/ContactFooter/ContactFooter';
 import './Home.css';
-
-//importaciones gifs
-import gifIntro from '../../assets/build/img/code.gif';
-import gifCode from '../../assets/build/img/code1.gif';
 
 //importaciones imágenes
 import name from '../../assets/name-cabecera.png';
@@ -89,30 +83,30 @@ export const Home = () => {
               </svg>
               <span>Download CV</span>
             </button>
-            <div><ScrollLink to={"section5"} text={'Proyectos'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
-            <div><ScrollLink to={"section4"} text={'Formación'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
-            <div><ScrollLink to={"section3"} text={'Tecnologías'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
           </div>
         </div>
       </div>
 
-      <div id="section2" className='flex justify-center items-center flex-wrap relative' style={{ scrollSnapAlign: 'start' }}>
-
-        <div className='row flex flex-col items-center flex-wrap lg:flex-row align-middle'>
-          <div className='col flex justify-center'>
-            <img src={gifIntro} alt="GIF" className="w-70 h-full object-contain" />
-          </div>
-
-          <div className='col flex justify-center'>
-            <div className='m-30 p-30'>
-              <Intro />
-              <div className='flex justify-end items-end mt-[30px]'>
-                <ScrollLink to={"section3"} />
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="section2">
+        <Intro />
       </div>
+
+      <div id="section3" className='section-projects mt-8'>
+        <h1 className='text-white titles mt-[20px] text-center border-b line-green p-6 text-[3rem]' style={{ textShadow: '0 0 2px rgb(145, 246, 21)' }}>Últimos proyectos</h1>
+        <GroupProjects />
+      </div>
+
+      {/* <div className="flex space-x-4">
+                <div className="flex-none">
+                    <ScrollLink to={"section5"} text={'Proyectos'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} />
+                </div>
+                <div className="flex-none">
+                    <ScrollLink to={"section4"} text={'Formación'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} />
+                </div>
+                <div className="flex-none">
+                    <ScrollLink to={"section3"} text={'Tecnologías'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} />
+                </div>
+            </div> */}
 
       <div className='tecnologias relative' id="section3" style={{ scrollSnapAlign: 'start' }}>
         <div className='row pt-[40px] flex items-center flex-wrap'>
@@ -147,47 +141,8 @@ export const Home = () => {
         </div >
       </div >
 
-      <div id="section4" className='flex justify-center items-center flex-wrap' style={{ scrollSnapAlign: 'start' }}>
-        <div className='row flex flex-col items-center flex-wrap lg:flex-row align-middle'>
-          <div className='col flex justify-center'>
-            <div className='m-30 '>
-              <h2 className='text-white titles line-green' style={{ textShadow: '0 0 2px rgb(145, 246, 21)' }}>Formación académica</h2>
-              <Education
-                title='Bootcamp Full Stack Web Developer'
-                academy='GeeksHubs Academy'
-                year='2024'
-                location='Valencia, Spain'
-              />
-              <Education
-                title='GM Gestión administrativa'
-                academy='CIPFP Mislata'
-                year='2015'
-                location='Valencia, Spain'
-              />
-              <h2 className='text-white mt-[50px] titles line-green' style={{ textShadow: '0 0 2px rgb(145, 246, 21)' }}>Idiomas</h2>
-              <Language language='Español' level='Nativo' />
-              <Language language='Inglés' level='Certificado A2' />
-              <Language language='Valenciano' level='Alto' />
-            </div>
-          </div>
 
-          <div className='col flex justify-center'>
-            <img src={gifCode} alt="GIF" className="w-70 h-full object-contain" />
-            <div className='flex justify-end items-end m-[30px]'>
-              <ScrollLink to={"section5"} />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="section5" className='section-projects'>
-        <h1 className='text-white titles mt-[20px] text-center border-b line-green p-6 text-[3rem]' style={{ textShadow: '0 0 2px rgb(145, 246, 21)' }}>Últimos proyectos</h1>
-
-        <GroupProjects />
-      </div>
-
-
-      <div className='section-contacto flex flex-col items-center'>
+      <div className='section-contacto flex flex-col items-center mt-4'>
         <ContactFooter />
         <button className="Download-button m-4 bg-gray-800 " onClick={handleDownloadCV}>
           <svg
@@ -204,7 +159,6 @@ export const Home = () => {
           <span>Download CV</span>
         </button>
       </div>
-
     </div >
 
   );
