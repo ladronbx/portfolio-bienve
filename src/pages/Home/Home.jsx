@@ -31,15 +31,15 @@ import imgExpress from '../../assets/build/img/express.webp';
 import imgTypeORM from '../../assets/build/img/typeorm.webp';
 import imgSql from '../../assets/build/img/sql.webp';
 import imgMysql from '../../assets/build/img/mysql.webp';
-import imgMongo from '../../assets/build/img/mongo.webp';
-import imgPhp from '../../assets/build/img/php.webp';
+import imgCi4 from '../../assets/build/img/ci4.webp';
+import imgBitbucket from '../../assets/build/img/bitbucket.svg';
 import imgLaravel from '../../assets/build/img/laravel.webp';
 import imgPostman from '../../assets/build/img/postman.webp';
 import imgDocker from '../../assets/build/img/docker.webp';
 import imgGit from '../../assets/build/img/git-icon.webp';
 import imgGitHub from '../../assets/build/img/GitHub_Icon.webp';
-
-
+import imgJira from '../../assets/build/img/jira.svg';
+import imgTrello from '../../assets/build/img/trello.svg';
 
 export const Home = () => {
   const handleDownloadCV = () => {
@@ -66,12 +66,12 @@ export const Home = () => {
             <div className='2xl:p-[26px] xl:p-[20px] lg:p-[10px] md:p-[10px] sm:p-[10px] xs:p-[10px]]'><Contact /></div>
           </div>
 
-
-
           <div className='flex justify-end items-end mt-[30px]'>
             <ScrollLink to={"section2"} />
           </div>
+
         </div>
+
         <div className="z-[-4]" style={{ scrollSnapAlign: 'start' }}>
           <img className="img-cabecera-style h-screen object-cover object-center w-full" src={imgCabecera} alt="name" draggable="false" />
           <div className="absolute bottom-0 left-0 mb-4 ml-4">
@@ -126,23 +126,24 @@ export const Home = () => {
             <li><img src={imgTailwind} alt="tailwind_avatar" aria-hidden="true" /><span>Tailwind</span></li>
             <li><img src={imgReact} alt="React_Icon" aria-hidden="true" /><span>React</span></li>
             <li><img src={imgRedux} alt="Redux_Icon" aria-hidden="true" /><span>Redux</span></li>
-            <li><img src={imgFigma} alt="Figma" aria-hidden="true" /><span>Figma</span></li>
             <li><img src={imgJs} alt="JavaScript_Icon" aria-hidden="true" /><span>JavaScript</span></li>
             <li><img src={imgTypescript} alt="Typescript_Icon" aria-hidden="true" /><span>TypeScript</span></li>
-            <li><img src={imgNode} alt="Node_Icon" aria-hidden="true" /><span>NodeJS</span></li>
+            {/* <li><img src={imgNode} alt="Node_Icon" aria-hidden="true" /><span>NodeJS</span></li> */}
             <li><img src={imgExpress} alt="Express" aria-hidden="true" /><span>Express</span></li>
             <li><img src={imgTypeORM} alt="avatar" aria-hidden="true" /><span>TypeORM</span></li>
             <li><img src={imgSql} alt="SQL_Icon" aria-hidden="true" /><span>SQL</span></li>
             <li><img src={imgMysql} alt="MySQL_Icon" aria-hidden="true" /><span>MySQL</span></li>
-            <li><img src={imgMongo} alt="MongoDB_Icon" aria-hidden="true" /><span>MongoDB</span></li>
-            <li><img src={imgPhp} alt="PHP_Icon" aria-hidden="true" /><span>PHP</span></li>
+            <li><img src={imgCi4} alt="ci4_Icon" aria-hidden="true" /><span>CodeIgniter</span></li>
             <li><img src={imgLaravel} alt="Laravel_Icon" aria-hidden="true" /><span>Laravel</span></li>
-
             <li><img src={imgAWS} alt="Deploy_AWS" aria-hidden="true" /><span>Deploy AWS</span></li>
             <li><img src={imgPostman} alt="Postman" aria-hidden="true" /><span>Postman</span></li>
             <li><img src={imgDocker} alt="Docker" aria-hidden="true" /><span>Docker</span></li>
             <li><img src={imgGit} alt="Git_icon" aria-hidden="true" /><span>Git</span></li>
             <li><img src={imgGitHub} alt="GitHub_Icon" aria-hidden="true" /><span>Github</span></li>
+            <li><img src={imgBitbucket} alt="Bitbucket_Icon" aria-hidden="true" /><span>Bitbucket</span></li>
+            <li><img src={imgFigma} alt="Figma" aria-hidden="true" /><span>Figma</span></li>
+            <li><img src={imgJira} alt="Jira_Icon" aria-hidden="true" /><span>Jira</span></li>
+            <li><img src={imgTrello} alt="Trello_Icon" aria-hidden="true" /><span>Trello</span></li>
           </ul>
         </div >
       </div >
