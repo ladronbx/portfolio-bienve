@@ -22,11 +22,11 @@ import imgDefaultTech from '../../assets/build/img/icon_default_tech.webp';
 import imgBootstrap from '../../assets/build/img/bootstrap.webp';
 import imgTailwind from '../../assets/build/img/tailwind.webp';
 import imgReact from '../../assets/build/img/react.webp';
-import imgRedux from '../../assets/build/img/redux.webp';
+// import imgRedux from '../../assets/build/img/redux.webp';
 import imgFigma from '../../assets/build/img/figma.webp';
 import imgJs from '../../assets/build/img/js.webp';
 import imgTypescript from '../../assets/build/img/typescript.webp';
-import imgNode from '../../assets/build/img/node.webp';
+// import imgNode from '../../assets/build/img/node.webp';
 import imgExpress from '../../assets/build/img/express.webp';
 import imgTypeORM from '../../assets/build/img/typeorm.webp';
 import imgSql from '../../assets/build/img/sql.webp';
@@ -40,6 +40,7 @@ import imgGit from '../../assets/build/img/git-icon.webp';
 import imgGitHub from '../../assets/build/img/GitHub_Icon.webp';
 import imgJira from '../../assets/build/img/jira.svg';
 import imgTrello from '../../assets/build/img/trello.svg';
+import imgSass from '../../assets/build/img/sass.svg';
 
 export const Home = () => {
   const handleDownloadCV = () => {
@@ -124,8 +125,9 @@ export const Home = () => {
             <li><img src={imgDefaultTech} alt="" aria-hidden="true" /><span>FlexBox</span></li>
             <li><img src={imgBootstrap} alt="Bootstrap logo" aria-hidden="true" /><span>Bootstrap</span></li>
             <li><img src={imgTailwind} alt="tailwind_avatar" aria-hidden="true" /><span>Tailwind</span></li>
+            <li><img src={imgSass} alt="Sass_Icon" aria-hidden="true" /><span>SASS</span></li>
             <li><img src={imgReact} alt="React_Icon" aria-hidden="true" /><span>React</span></li>
-            <li><img src={imgRedux} alt="Redux_Icon" aria-hidden="true" /><span>Redux</span></li>
+            {/* <li><img src={imgRedux} alt="Redux_Icon" aria-hidden="true" /><span>Redux</span></li> */}
             <li><img src={imgJs} alt="JavaScript_Icon" aria-hidden="true" /><span>JavaScript</span></li>
             <li><img src={imgTypescript} alt="Typescript_Icon" aria-hidden="true" /><span>TypeScript</span></li>
             {/* <li><img src={imgNode} alt="Node_Icon" aria-hidden="true" /><span>NodeJS</span></li> */}
