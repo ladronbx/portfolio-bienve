@@ -33,11 +33,11 @@ module.exports = {
         '2xl': '1536px',
       },
       colors: {
+        'custom-green': 'rgb(86,232,140)',
       },
       fontFamily: {
         'roboto-mono': ['Roboto Mono', 'monospace'],
       },
-      fontStyle: [],
       backgroundImage: theme => ({
         'home-header': "url('/home-header-container-img.png')",
       }),
