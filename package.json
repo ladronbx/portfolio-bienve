@@ -1,0 +1,48 @@
+{
+  "name": "vite-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "build:css": "postcss src/tailwind.css -o src/index.css",
+    "scss:compile": "node-sass --watch src/scss -o dist/css",
+    "start": "npm-run-all --parallel build:css dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://ladronbx.github.io/portfolio-bienve/",
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "bootstrap": "^5.3.2",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-responsive": "^9.0.2",
+    "react-router-dom": "^6.21.1",
+    "react-scroll": "^1.9.0",
+    "swiper": "^11.0.5",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0",
+    "vite": "^5.0.12",
+    "vite-plugin-style-import": "^2.0.0",
+    "vite-svg-loader": "^5.1.0"
+  }
+}
