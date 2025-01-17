@@ -90,9 +90,9 @@ export const Home = () => {
               </svg>
               <span>Download CV</span>
             </button>
-            <div><ScrollLink to={"section5"} text={'Proyectos'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
-            <div><ScrollLink to={"section4"} text={'Formación'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
-            <div><ScrollLink to={"section3"} text={'Tecnologías'} customContainerClass={'animate-none cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'} /></div>
+            <div><ScrollLink to={"section5"} text={'Proyectos'} customContainerClass={'animate-none cursor-pointer bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'}  /></div>
+            <div><ScrollLink to={"section4"} text={'Formación'} customContainerClass={'animate-none cursor-pointer bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'}  /></div>
+            <div><ScrollLink to={"section3"} text={'Tecnologías'} customContainerClass={'animate-none cursor-pointer bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'}  /></div>
           </div>
         </div>
       </div>
