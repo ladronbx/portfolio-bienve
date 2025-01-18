@@ -52,7 +52,7 @@ export const Home = () => {
     downloadLink.click();
     document.body.removeChild(downloadLink);
   };
-  
+
   return (
     <div className='container-body relative bg-white w-full overflow-x-hidden'>
 
@@ -78,8 +78,8 @@ export const Home = () => {
 
         <div className="z-[-4]" style={{ scrollSnapAlign: 'start' }}>
           <img className="img-cabecera-style h-screen object-cover object-center w-full" src={imgCabecera} alt="name" draggable="false" />
-          <div className="absolute bottom-0 left-0 mb-4 ml-4">
-            <button className="Download-button bg-gray-800 mb-4" onClick={handleDownloadCV}>
+          <div className="absolute bottom-0 left-0 mb-3 ml-4">
+            <button className="Download-button bg-gray-800 mb-2 pt-3 pb-3" onClick={handleDownloadCV}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="16"
@@ -91,24 +91,27 @@ export const Home = () => {
                   fill="white"
                 ></path>
               </svg>
-              <span>Download CV</span>
+              <span className='ml-1'>Download CV</span>
             </button>
 
-            <div className='flex justify-center items-center bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2'>
-              <a href="#section5" className="cursor-pointer no-underline p-2 text-white">
-                Proyectos
+            <div className='bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 mt-1'>
+              <a href="#section5" className="cursor-pointer no-underline p-2 text-white flex items-center gap-4">
+                <Arrow />
+                <div className="-ml-4">Proyectos</div>
               </a>
             </div>
 
-            <div className='flex justify-center items-center bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2'>
-              <a href="#section5" className="cursor-pointer no-underline p-2 text-white">
-                Formación
+            <div className='bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2'>
+              <a href="#section2" className="cursor-pointer no-underline p-2 text-white flex items-center gap-4">
+                <Arrow />
+                <div className="-ml-4">Formación</div>
               </a>
             </div>
 
-            <div className='flex justify-center items-center bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2'>
-              <a href="#section5" className="cursor-pointer no-underline p-2 text-white">
-                Tecnologías
+            <div className='bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2'>
+              <a href="#section3" className="cursor-pointer no-underline p-2 text-white flex items-center gap-4">
+                <Arrow />
+                <div className="-ml-4">Tecnologías</div>
               </a>
             </div>
 
