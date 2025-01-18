@@ -3,9 +3,9 @@ import { Education } from '../../common/Education/Education';
 import { Language } from '../../common/Language/Language';
 import { Contact } from '../../common/Contact/Contact';
 import { Intro } from '../../common/Intro/Intro';
-import { ScrollLink } from '../../common/ScrollLink/ScrollLink';
 import { GroupProjects } from '../../common/GroupProjects/GroupProjects';
 import { ContactFooter } from '../../common/ContactFooter/ContactFooter';
+import { Arrow } from '../../common/Arrow/Arrow';
 import './Home.css';
 
 //importaciones gifs
@@ -42,6 +42,7 @@ import imgJira from '../../assets/build/img/jira.svg';
 import imgTrello from '../../assets/build/img/trello.svg';
 import imgSass from '../../assets/build/img/sass.svg';
 
+
 export const Home = () => {
   const handleDownloadCV = () => {
     const downloadLink = document.createElement('a');
@@ -51,7 +52,7 @@ export const Home = () => {
     downloadLink.click();
     document.body.removeChild(downloadLink);
   };
-
+  
   return (
     <div className='container-body relative bg-white w-full overflow-x-hidden'>
 
@@ -67,8 +68,10 @@ export const Home = () => {
             <div className='2xl:p-[26px] xl:p-[20px] lg:p-[10px] md:p-[10px] sm:p-[10px] xs:p-[10px]]'><Contact /></div>
           </div>
 
-          <div className='flex justify-end items-end mt-[30px]'>
-            <ScrollLink to={"section2"} />
+          <div className='flex justify-end items-end mt-[30px] animate-bounce hover:animate-none '>
+            <a href="#section2" className="cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:bg-[rgb(86,232,140)] hover:animate-none no-underline p-2 py-2 m-3">
+              <Arrow />
+            </a>
           </div>
 
         </div>
@@ -90,9 +93,25 @@ export const Home = () => {
               </svg>
               <span>Download CV</span>
             </button>
-            <div><ScrollLink to={"section5"} text={'Proyectos'} customContainerClass={'animate-none cursor-pointer bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'}  /></div>
-            <div><ScrollLink to={"section4"} text={'Formación'} customContainerClass={'animate-none cursor-pointer bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'}  /></div>
-            <div><ScrollLink to={"section3"} text={'Tecnologías'} customContainerClass={'animate-none cursor-pointer bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2 text-left pt-1 pb-1'}  /></div>
+
+            <div className='flex justify-center items-center bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2'>
+              <a href="#section5" className="cursor-pointer no-underline p-2 text-white">
+                Proyectos
+              </a>
+            </div>
+
+            <div className='flex justify-center items-center bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2'>
+              <a href="#section5" className="cursor-pointer no-underline p-2 text-white">
+                Formación
+              </a>
+            </div>
+
+            <div className='flex justify-center items-center bg-gray-800 hover:bg-[rgb(86,232,140)] hover:text-black rounded-md text-white tracking-wider shadow-xl w-[200px] mb-2'>
+              <a href="#section5" className="cursor-pointer no-underline p-2 text-white">
+                Tecnologías
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -107,8 +126,10 @@ export const Home = () => {
           <div className='col flex justify-center'>
             <div className='m-30 p-30'>
               <Intro />
-              <div className='flex justify-end items-end mt-[30px]'>
-                <ScrollLink to={"section3"} />
+              <div className='flex justify-end items-end mt-[30px] animate-bounce hover:animate-none '>
+                <a href="#section3" className="cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:bg-[rgb(86,232,140)] hover:animate-none no-underline p-2 py-2 m-3">
+                  <Arrow />
+                </a>
               </div>
             </div>
           </div>
@@ -176,8 +197,10 @@ export const Home = () => {
 
           <div className='col flex justify-center'>
             <img src={gifCode} alt="GIF" className="w-70 h-full object-contain" />
-            <div className='flex justify-end items-end m-[30px]'>
-              <ScrollLink to={"section5"} />
+            <div className='flex justify-end items-end mt-[30px] animate-bounce hover:animate-none '>
+              <a href="#section5" className="cursor-pointer bg-gray-800 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:bg-[rgb(86,232,140)] hover:animate-none no-underline p-2 py-2 mt-11">
+                <Arrow />
+              </a>
             </div>
           </div>
         </div>
